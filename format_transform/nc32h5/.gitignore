@@ -1,0 +1,9 @@
+*.swp
+*.nc
+*.h5
+*.grd
+*.tmp
+*.dat
+*.idx
+*.pyc
+data/

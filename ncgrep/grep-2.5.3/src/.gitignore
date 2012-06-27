@@ -1,0 +1,8 @@
+Makefile*
+tags
+*.[ao]
+grep
+fgrep
+egrep
+*.swp
+.deps/

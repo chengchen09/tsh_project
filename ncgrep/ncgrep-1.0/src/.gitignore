@@ -1,0 +1,6 @@
+tags
+*.o
+*.swp
+.deps/
+ncgrep
+int.nc

@@ -1,0 +1,10 @@
+ncols         21600
+nrows         10800
+xllcorner     -180
+yllcorner     -90
+cellsize      0.01666666667
+NODATA_value  -99999
+byteorder     LSBFIRST
+NUMBERTYPE    4_BYTE_FLOAT
+MIN_VALUE     -10803.0
+MAX_VALUE     8333.0

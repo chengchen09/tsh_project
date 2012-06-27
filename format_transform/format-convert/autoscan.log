@@ -1,0 +1,7 @@
+autoscan: warning: missing AC_HEADER_STDBOOL wanted by: 
+	text2nc4/text2nc4.c:92
+	text2nc4/text2nc4.c:102
+	text2nc4/text2nc4.c:111
+	bin2nc4/bin2nc4.c:90
+	bin2nc4/bin2nc4.c:100
+	bin2nc4/bin2nc4.c:109

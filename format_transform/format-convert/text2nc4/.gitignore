@@ -1,0 +1,11 @@
+*.o
+*.swp
+text2nc4
+bin2nc4
+Makefile
+.deps/
+*.nc
+*.txt
+*.bin
+tags
+a.out

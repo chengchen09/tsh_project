@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf>
+	<dimension name="x" length="4" />
+	<dimension name="y" length="4" />
+	<variable name="x" shape="x" type="float 8">
+		<attribute name="unit" value="degree" />
+	</variable>
+	<variable name="y" shape="y" type="float 8">
+		<attribute name="unit" value="degree" />
+	</variable>
+	<variable name="z" shape="y x" type="int 4">
+	</variable>
+	<attribute name="title" value="ETOPO1_Ice_c_gmt4.grd" />
+</netcdf>

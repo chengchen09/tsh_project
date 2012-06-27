@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf byteorder="LSBFIRST">
+	<dimension name="x" length="4" />
+	<dimension name="y" length="4" />
+	<variable name="z" shape="y x" type="float 4">
+		<attribute name="unit" value="meter" />
+	</variable>
+	<attribute name="source" value="made by bin2nc4" />
+</netcdf>

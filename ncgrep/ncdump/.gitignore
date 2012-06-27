@@ -1,0 +1,7 @@
+*.o
+*.a
+*.Po
+Makefile*
+test*
+*.swp
+tags

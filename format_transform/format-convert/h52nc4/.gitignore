@@ -1,0 +1,5 @@
+*.o
+*.swp
+ph52nc4
+Makefile
+.deps/
