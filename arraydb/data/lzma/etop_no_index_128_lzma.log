@@ -1,0 +1,902 @@
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -10215"
+0: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.506641
+worker-1 used time: 4.835333
+
+1: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.408261
+worker-1 used time: 4.712036
+
+2: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.613956
+worker-1 used time: 4.916057
+
+3: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.484304
+worker-1 used time: 4.785894
+
+4: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.606487
+worker-1 used time: 4.908829
+
+5: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.33865
+worker-1 used time: 4.634344
+
+6: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.551461
+worker-1 used time: 4.855083
+
+7: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.484111
+worker-1 used time: 4.835666
+
+8: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.463198
+worker-1 used time: 4.786927
+
+9: 
+count: 234
+ratio: 1.002947e-06
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.480818
+worker-1 used time: 4.779873
+
+avg_io: 4.49508883333	avg_all: 4.81312933333
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -9575"
+0: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.50628
+worker-1 used time: 4.801347
+
+1: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.366044
+worker-1 used time: 4.674038
+
+2: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.400353
+worker-1 used time: 4.700496
+
+3: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.511199
+worker-1 used time: 4.831799
+
+4: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.539054
+worker-1 used time: 4.84177
+
+5: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.397269
+worker-1 used time: 4.713187
+
+6: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.431877
+worker-1 used time: 4.73456
+
+7: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.420799
+worker-1 used time: 4.727305
+
+8: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.45693
+worker-1 used time: 4.746067
+
+9: 
+count: 2337
+ratio: 1.001661e-05
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.453589
+worker-1 used time: 4.844811
+
+avg_io: 4.454059	avg_all: 4.75904416667
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -8505"
+0: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.561816
+worker-1 used time: 4.874991
+
+1: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.44113
+worker-1 used time: 4.756322
+
+2: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.573522
+worker-1 used time: 4.889761
+
+3: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.481902
+worker-1 used time: 4.798501
+
+4: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.544876
+worker-1 used time: 4.864577
+
+5: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.598779
+worker-1 used time: 4.90819
+
+6: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.477291
+worker-1 used time: 4.823823
+
+7: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.34448
+worker-1 used time: 4.689699
+
+8: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.475703
+worker-1 used time: 4.797142
+
+9: 
+count: 23333
+ratio: 0.0001000075
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.482264
+worker-1 used time: 4.806104
+
+avg_io: 4.50397533333	avg_all: 4.827523
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -6665"
+0: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.48921
+worker-1 used time: 4.794576
+
+1: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.569017
+worker-1 used time: 4.879432
+
+2: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.618336
+worker-1 used time: 4.930877
+
+3: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.471108
+worker-1 used time: 4.764486
+
+4: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.527052
+worker-1 used time: 4.844171
+
+5: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 5.25437
+worker-1 used time: 5.545248
+
+6: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.444903
+worker-1 used time: 4.745389
+
+7: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.514617
+worker-1 used time: 4.821335
+
+8: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.408054
+worker-1 used time: 4.713242
+
+9: 
+count: 234360
+ratio: 0.00100449
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.547181
+worker-1 used time: 4.850993
+
+avg_io: 4.5196975	avg_all: 4.82583216667
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -5876"
+0: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.597265
+worker-1 used time: 4.89741
+
+1: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.544783
+worker-1 used time: 4.851407
+
+2: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.483054
+worker-1 used time: 4.839928
+
+3: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.502853
+worker-1 used time: 4.799666
+
+4: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.505948
+worker-1 used time: 4.807397
+
+5: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 5.233692
+worker-1 used time: 5.542558
+
+6: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.481372
+worker-1 used time: 4.782069
+
+7: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.442149
+worker-1 used time: 4.739793
+
+8: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.437184999999999
+worker-1 used time: 4.748696
+
+9: 
+count: 2348442
+ratio: 0.01006565
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.492808
+worker-1 used time: 4.783746
+
+avg_io: 4.501803	avg_all: 4.81070216667
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -5080"
+0: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.485584
+worker-1 used time: 4.793704
+
+1: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.52635
+worker-1 used time: 4.839052
+
+2: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.487717
+worker-1 used time: 4.792702
+
+3: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.575944
+worker-1 used time: 4.884641
+
+4: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.520643
+worker-1 used time: 4.821796
+
+5: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.654266
+worker-1 used time: 4.970955
+
+6: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.518964
+worker-1 used time: 4.840805
+
+7: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.547553
+worker-1 used time: 4.839498
+
+8: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.57133
+worker-1 used time: 4.870757
+
+9: 
+count: 23381759
+ratio: 0.1002165
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.612763
+worker-1 used time: 4.928639
+
+avg_io: 4.543464	avg_all: 4.84942483333
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -4054"
+0: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.421646
+worker-1 used time: 4.734686
+
+1: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.60284
+worker-1 used time: 4.916355
+
+2: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.492928
+worker-1 used time: 4.797703
+
+3: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.507403
+worker-1 used time: 4.816491
+
+4: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.498516
+worker-1 used time: 4.820381
+
+5: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.6325
+worker-1 used time: 4.948037
+
+6: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.531932
+worker-1 used time: 4.834765
+
+7: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.545472
+worker-1 used time: 4.854081
+
+8: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.474576
+worker-1 used time: 4.786883
+
+9: 
+count: 69997259
+ratio: 0.3000152
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.557279
+worker-1 used time: 4.85624
+
+avg_io: 4.522255	avg_all: 4.8299435
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -2457"
+0: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.498169
+worker-1 used time: 4.790328
+
+1: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.432067
+worker-1 used time: 4.736766
+
+2: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.553897
+worker-1 used time: 4.848563
+
+3: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.438132
+worker-1 used time: 4.748653
+
+4: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.53716
+worker-1 used time: 4.83687
+
+5: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.580697
+worker-1 used time: 4.880151
+
+6: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.541877
+worker-1 used time: 4.852579
+
+7: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.596274
+worker-1 used time: 4.892871
+
+8: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.518116
+worker-1 used time: 4.81863
+
+9: 
+count: 116663286
+ratio: 0.5000304
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.542425
+worker-1 used time: 4.852852
+
+avg_io: 4.53194066667	avg_all: 4.83330366667
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < -10"
+0: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.536737
+worker-1 used time: 4.846681
+
+1: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.466415
+worker-1 used time: 4.781516
+
+2: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.466006
+worker-1 used time: 4.779448
+
+3: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.440977
+worker-1 used time: 4.770832
+
+4: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.471646
+worker-1 used time: 4.777524
+
+5: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.430519
+worker-1 used time: 4.748971
+
+6: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.598257
+worker-1 used time: 4.904786
+
+7: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.437985
+worker-1 used time: 4.719945
+
+8: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.484146
+worker-1 used time: 4.799449
+
+9: 
+count: 163361042
+ratio: 0.7001815
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.566724
+worker-1 used time: 4.87044
+
+avg_io: 4.4776545	avg_all: 4.792575
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < 565"
+0: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.429901
+worker-1 used time: 4.742065
+
+1: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.511875
+worker-1 used time: 4.813787
+
+2: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.423816
+worker-1 used time: 4.768289
+
+3: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.409708
+worker-1 used time: 4.734288
+
+4: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.520336
+worker-1 used time: 4.82215
+
+5: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.453836
+worker-1 used time: 4.762066
+
+6: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.56379
+worker-1 used time: 4.869107
+
+7: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.493624000000001
+worker-1 used time: 4.813504
+
+8: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.567813
+worker-1 used time: 4.883738
+
+9: 
+count: 209994936
+ratio: 0.9000591
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.495122
+worker-1 used time: 4.794647
+
+avg_io: 4.4831015	avg_all: 4.7957405
+../src/simple_client "select etop_128_lzma from etop_128_lzma where etop_128_lzma < 8000"
+0: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.534598
+worker-1 used time: 4.847288
+
+1: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.568383
+worker-1 used time: 4.872018
+
+2: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.459605
+worker-1 used time: 4.780285
+
+3: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.377085
+worker-1 used time: 4.671665
+
+4: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.383901
+worker-1 used time: 4.694796
+
+5: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.47524
+worker-1 used time: 4.765183
+
+6: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.52836
+worker-1 used time: 4.824368
+
+7: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.464092
+worker-1 used time: 4.773678
+
+8: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.483625
+worker-1 used time: 4.796054
+
+9: 
+count: 233312396
+ratio: 1
+ candidate chunks: 14365
+ valid chunks: 0
+ IO time used: 4.50099
+worker-1 used time: 4.820834
+
+avg_io: 4.48531866667	avg_all: 4.79340033333

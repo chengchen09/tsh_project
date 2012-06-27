@@ -1,0 +1,333 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+Array	gen-py/arraydb/ttypes.py	/^class Array:$/;"	c
+ArrayDBHandler	ArrayDBHandler.py	/^class ArrayDBHandler:$/;"	c
+ArrayInfo	gen-py/arraydb/ttypes.py	/^class ArrayInfo:$/;"	c
+Chunk	chunk.py	/^class Chunk:$/;"	c
+ChunkIndex	gen-py/arraydb/ttypes.py	/^class ChunkIndex:$/;"	c
+ChunkInfo	gen-py/arraydb/ttypes.py	/^class ChunkInfo:$/;"	c
+Client	gen-py/arraydb/ArrayDB.py	/^class Client(Iface):$/;"	c
+CompressType	gen-py/arraydb/ttypes.py	/^class CompressType:$/;"	c
+DataType	gen-py/arraydb/ttypes.py	/^class DataType:$/;"	c
+DimInfo	gen-py/arraydb/ttypes.py	/^class DimInfo:$/;"	c
+Iface	gen-py/arraydb/ArrayDB.py	/^class Iface:$/;"	c
+IndexInfo	gen-py/arraydb/ttypes.py	/^class IndexInfo:$/;"	c
+IndexType	gen-py/arraydb/ttypes.py	/^class IndexType:$/;"	c
+Parser	Parser.py	/^class Parser:$/;"	c
+Processor	gen-py/arraydb/ArrayDB.py	/^class Processor(Iface, TProcessor):$/;"	c
+StorageStrategy	gen-py/arraydb/ttypes.py	/^class StorageStrategy:$/;"	c
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:create_arrinfo_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:create_arrinfo_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:create_indexinfo_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:create_indexinfo_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:echo_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:echo_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:executeQuery_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:executeQuery_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:filter_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:filter_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:load_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:load_chunk_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:load_chunk_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:load_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_fillvalue_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_fillvalue_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_index_type_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_index_type_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_para_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_para_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_time_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:set_time_result	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:store_args	file:
+__eq__	gen-py/arraydb/ArrayDB.py	/^  def __eq__(self, other):$/;"	m	class:store_result	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:Array	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:ArrayInfo	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:ChunkIndex	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:ChunkInfo	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:DimInfo	file:
+__eq__	gen-py/arraydb/ttypes.py	/^  def __eq__(self, other):$/;"	m	class:IndexInfo	file:
+__init__	ArrayDBHandler.py	/^    def __init__(self):$/;"	m	class:ArrayDBHandler
+__init__	Parser.py	/^    def __init__(self, cmd):$/;"	m	class:Parser
+__init__	chunk.py	/^    def __init__(self):$/;"	m	class:Chunk
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, array=None, array_name=None,):$/;"	m	class:store_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, array_name=None, index_name=None, index_type=None,):$/;"	m	class:create_indexinfo_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, array_name=None, var_name=None, min=None, max=None,):$/;"	m	class:filter_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, array_name=None,):$/;"	m	class:load_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, arrinfo=None,):$/;"	m	class:create_arrinfo_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, chunk_name=None, fill_value=None,):$/;"	m	class:set_fillvalue_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, flag=None,):$/;"	m	class:set_time_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, handler):$/;"	m	class:Processor
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, index_type=None,):$/;"	m	class:set_index_type_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, iprot, oprot=None):$/;"	m	class:Client
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, key=None, value=None,):$/;"	m	class:set_para_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, name=None, id=None, first=None, last=None,):$/;"	m	class:load_chunk_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, request=None, data=None,):$/;"	m	class:executeQuery_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, request=None,):$/;"	m	class:echo_args
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:create_indexinfo_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:echo_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:executeQuery_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:filter_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:load_chunk_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:load_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:set_fillvalue_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:set_index_type_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:set_para_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:set_time_result
+__init__	gen-py/arraydb/ArrayDB.py	/^  def __init__(self, success=None,):$/;"	m	class:store_result
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, array_id=None, name=None, var_name=None, var_type=None, dtype_size=None, nelmts=None, ndims=None, ss=None, nchunks=None, dims=None, chunk_dims=None, chunks=None, fill_value=None, compress_type=None,):$/;"	m	class:ArrayInfo
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, array_name=None, index_name=None, index_type=None, chunk_indexs=None,):$/;"	m	class:IndexInfo
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, chunk_id=None, max=None, min=None,):$/;"	m	class:ChunkIndex
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, chunk_id=None, node_id=None, ndims=None, chunk_size=None, compressed_size=None, chunk_name=None, first=None, last=None,):$/;"	m	class:ChunkInfo
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, name=None, compress_type=None, data=None,):$/;"	m	class:Array
+__init__	gen-py/arraydb/ttypes.py	/^  def __init__(self, name=None, length=None, chunk_length=None, overlap_length=None,):$/;"	m	class:DimInfo
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:create_arrinfo_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:create_arrinfo_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:create_indexinfo_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:create_indexinfo_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:echo_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:echo_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:executeQuery_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:executeQuery_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:filter_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:filter_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:load_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:load_chunk_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:load_chunk_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:load_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_fillvalue_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_fillvalue_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_index_type_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_index_type_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_para_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_para_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_time_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:set_time_result	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:store_args	file:
+__ne__	gen-py/arraydb/ArrayDB.py	/^  def __ne__(self, other):$/;"	m	class:store_result	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:Array	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:ArrayInfo	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:ChunkIndex	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:ChunkInfo	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:DimInfo	file:
+__ne__	gen-py/arraydb/ttypes.py	/^  def __ne__(self, other):$/;"	m	class:IndexInfo	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:create_arrinfo_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:create_arrinfo_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:create_indexinfo_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:create_indexinfo_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:echo_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:echo_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:executeQuery_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:executeQuery_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:filter_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:filter_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:load_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:load_chunk_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:load_chunk_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:load_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_fillvalue_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_fillvalue_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_index_type_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_index_type_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_para_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_para_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_time_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:set_time_result	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:store_args	file:
+__repr__	gen-py/arraydb/ArrayDB.py	/^  def __repr__(self):$/;"	m	class:store_result	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:Array	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:ArrayInfo	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:ChunkIndex	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:ChunkInfo	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:DimInfo	file:
+__repr__	gen-py/arraydb/ttypes.py	/^  def __repr__(self):$/;"	m	class:IndexInfo	file:
+create_arrinfo	ArrayDBHandler.py	/^    def create_arrinfo(self, arrinfo):$/;"	m	class:ArrayDBHandler
+create_arrinfo	gen-py/arraydb/ArrayDB.py	/^  def create_arrinfo(self, arrinfo):$/;"	m	class:Client
+create_arrinfo	gen-py/arraydb/ArrayDB.py	/^  def create_arrinfo(self, arrinfo):$/;"	m	class:Iface
+create_arrinfo_args	gen-py/arraydb/ArrayDB.py	/^class create_arrinfo_args:$/;"	c
+create_arrinfo_result	gen-py/arraydb/ArrayDB.py	/^class create_arrinfo_result:$/;"	c
+create_indexinfo	ArrayDBHandler.py	/^    def create_indexinfo(self, array_name, index_name, index_type):$/;"	m	class:ArrayDBHandler
+create_indexinfo	gen-py/arraydb/ArrayDB.py	/^  def create_indexinfo(self, array_name, index_name, index_type):$/;"	m	class:Client
+create_indexinfo	gen-py/arraydb/ArrayDB.py	/^  def create_indexinfo(self, array_name, index_name, index_type):$/;"	m	class:Iface
+create_indexinfo_args	gen-py/arraydb/ArrayDB.py	/^class create_indexinfo_args:$/;"	c
+create_indexinfo_result	gen-py/arraydb/ArrayDB.py	/^class create_indexinfo_result:$/;"	c
+echo	gen-py/arraydb/ArrayDB.py	/^  def echo(self, request):$/;"	m	class:Client
+echo	gen-py/arraydb/ArrayDB.py	/^  def echo(self, request):$/;"	m	class:Iface
+echo_args	gen-py/arraydb/ArrayDB.py	/^class echo_args:$/;"	c
+echo_result	gen-py/arraydb/ArrayDB.py	/^class echo_result:$/;"	c
+executeQuery	ArrayDBHandler.py	/^    def executeQuery(self, request, data):$/;"	m	class:ArrayDBHandler
+executeQuery	gen-py/arraydb/ArrayDB.py	/^  def executeQuery(self, request, data):$/;"	m	class:Client
+executeQuery	gen-py/arraydb/ArrayDB.py	/^  def executeQuery(self, request, data):$/;"	m	class:Iface
+executeQuery_args	gen-py/arraydb/ArrayDB.py	/^class executeQuery_args:$/;"	c
+executeQuery_result	gen-py/arraydb/ArrayDB.py	/^class executeQuery_result:$/;"	c
+filter	ArrayDBHandler.py	/^    def filter(self, array_name, var_name, min, max):$/;"	m	class:ArrayDBHandler
+filter	gen-py/arraydb/ArrayDB.py	/^  def filter(self, array_name, var_name, min, max):$/;"	m	class:Client
+filter	gen-py/arraydb/ArrayDB.py	/^  def filter(self, array_name, var_name, min, max):$/;"	m	class:Iface
+filter_args	gen-py/arraydb/ArrayDB.py	/^class filter_args:$/;"	c
+filter_result	gen-py/arraydb/ArrayDB.py	/^class filter_result:$/;"	c
+func	gen-py/arraydb/test.py	/^def func():$/;"	f
+load	ArrayDBHandler.py	/^    def load(self, array_name):$/;"	m	class:ArrayDBHandler
+load	gen-py/arraydb/ArrayDB.py	/^  def load(self, array_name):$/;"	m	class:Client
+load	gen-py/arraydb/ArrayDB.py	/^  def load(self, array_name):$/;"	m	class:Iface
+load_args	gen-py/arraydb/ArrayDB.py	/^class load_args:$/;"	c
+load_chunk	ArrayDBHandler.py	/^    def load_chunk(self, name, id, first, last):$/;"	m	class:ArrayDBHandler
+load_chunk	gen-py/arraydb/ArrayDB.py	/^  def load_chunk(self, name, id, first, last):$/;"	m	class:Client
+load_chunk	gen-py/arraydb/ArrayDB.py	/^  def load_chunk(self, name, id, first, last):$/;"	m	class:Iface
+load_chunk_args	gen-py/arraydb/ArrayDB.py	/^class load_chunk_args:$/;"	c
+load_chunk_result	gen-py/arraydb/ArrayDB.py	/^class load_chunk_result:$/;"	c
+load_result	gen-py/arraydb/ArrayDB.py	/^class load_result:$/;"	c
+process	gen-py/arraydb/ArrayDB.py	/^  def process(self, iprot, oprot):$/;"	m	class:Processor
+process_create_arrinfo	gen-py/arraydb/ArrayDB.py	/^  def process_create_arrinfo(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_create_indexinfo	gen-py/arraydb/ArrayDB.py	/^  def process_create_indexinfo(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_echo	gen-py/arraydb/ArrayDB.py	/^  def process_echo(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_executeQuery	gen-py/arraydb/ArrayDB.py	/^  def process_executeQuery(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_filter	gen-py/arraydb/ArrayDB.py	/^  def process_filter(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_load	gen-py/arraydb/ArrayDB.py	/^  def process_load(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_load_chunk	gen-py/arraydb/ArrayDB.py	/^  def process_load_chunk(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_set_fillvalue	gen-py/arraydb/ArrayDB.py	/^  def process_set_fillvalue(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_set_index_type	gen-py/arraydb/ArrayDB.py	/^  def process_set_index_type(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_set_para	gen-py/arraydb/ArrayDB.py	/^  def process_set_para(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_set_time	gen-py/arraydb/ArrayDB.py	/^  def process_set_time(self, seqid, iprot, oprot):$/;"	m	class:Processor
+process_store	gen-py/arraydb/ArrayDB.py	/^  def process_store(self, seqid, iprot, oprot):$/;"	m	class:Processor
+read	arrayIO.py	/^def read(path, type, num):$/;"	f
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:create_arrinfo_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:create_arrinfo_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:create_indexinfo_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:create_indexinfo_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:echo_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:echo_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:executeQuery_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:executeQuery_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:filter_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:filter_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:load_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:load_chunk_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:load_chunk_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:load_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_fillvalue_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_fillvalue_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_index_type_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_index_type_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_para_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_para_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_time_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:set_time_result
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:store_args
+read	gen-py/arraydb/ArrayDB.py	/^  def read(self, iprot):$/;"	m	class:store_result
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:Array
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:ArrayInfo
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:ChunkIndex
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:ChunkInfo
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:DimInfo
+read	gen-py/arraydb/ttypes.py	/^  def read(self, iprot):$/;"	m	class:IndexInfo
+recv_create_arrinfo	gen-py/arraydb/ArrayDB.py	/^  def recv_create_arrinfo(self, ):$/;"	m	class:Client
+recv_create_indexinfo	gen-py/arraydb/ArrayDB.py	/^  def recv_create_indexinfo(self, ):$/;"	m	class:Client
+recv_echo	gen-py/arraydb/ArrayDB.py	/^  def recv_echo(self, ):$/;"	m	class:Client
+recv_executeQuery	gen-py/arraydb/ArrayDB.py	/^  def recv_executeQuery(self, ):$/;"	m	class:Client
+recv_filter	gen-py/arraydb/ArrayDB.py	/^  def recv_filter(self, ):$/;"	m	class:Client
+recv_load	gen-py/arraydb/ArrayDB.py	/^  def recv_load(self, ):$/;"	m	class:Client
+recv_load_chunk	gen-py/arraydb/ArrayDB.py	/^  def recv_load_chunk(self, ):$/;"	m	class:Client
+recv_set_fillvalue	gen-py/arraydb/ArrayDB.py	/^  def recv_set_fillvalue(self, ):$/;"	m	class:Client
+recv_set_index_type	gen-py/arraydb/ArrayDB.py	/^  def recv_set_index_type(self, ):$/;"	m	class:Client
+recv_set_para	gen-py/arraydb/ArrayDB.py	/^  def recv_set_para(self, ):$/;"	m	class:Client
+recv_set_time	gen-py/arraydb/ArrayDB.py	/^  def recv_set_time(self, ):$/;"	m	class:Client
+recv_store	gen-py/arraydb/ArrayDB.py	/^  def recv_store(self, ):$/;"	m	class:Client
+send_create_arrinfo	gen-py/arraydb/ArrayDB.py	/^  def send_create_arrinfo(self, arrinfo):$/;"	m	class:Client
+send_create_indexinfo	gen-py/arraydb/ArrayDB.py	/^  def send_create_indexinfo(self, array_name, index_name, index_type):$/;"	m	class:Client
+send_echo	gen-py/arraydb/ArrayDB.py	/^  def send_echo(self, request):$/;"	m	class:Client
+send_executeQuery	gen-py/arraydb/ArrayDB.py	/^  def send_executeQuery(self, request, data):$/;"	m	class:Client
+send_filter	gen-py/arraydb/ArrayDB.py	/^  def send_filter(self, array_name, var_name, min, max):$/;"	m	class:Client
+send_load	gen-py/arraydb/ArrayDB.py	/^  def send_load(self, array_name):$/;"	m	class:Client
+send_load_chunk	gen-py/arraydb/ArrayDB.py	/^  def send_load_chunk(self, name, id, first, last):$/;"	m	class:Client
+send_set_fillvalue	gen-py/arraydb/ArrayDB.py	/^  def send_set_fillvalue(self, chunk_name, fill_value):$/;"	m	class:Client
+send_set_index_type	gen-py/arraydb/ArrayDB.py	/^  def send_set_index_type(self, index_type):$/;"	m	class:Client
+send_set_para	gen-py/arraydb/ArrayDB.py	/^  def send_set_para(self, key, value):$/;"	m	class:Client
+send_set_time	gen-py/arraydb/ArrayDB.py	/^  def send_set_time(self, flag):$/;"	m	class:Client
+send_store	gen-py/arraydb/ArrayDB.py	/^  def send_store(self, array, array_name):$/;"	m	class:Client
+set_fillvalue	ArrayDBHandler.py	/^    def set_fillvalue(self, chunk_name, fill_value):$/;"	m	class:ArrayDBHandler
+set_fillvalue	gen-py/arraydb/ArrayDB.py	/^  def set_fillvalue(self, chunk_name, fill_value):$/;"	m	class:Client
+set_fillvalue	gen-py/arraydb/ArrayDB.py	/^  def set_fillvalue(self, chunk_name, fill_value):$/;"	m	class:Iface
+set_fillvalue_args	gen-py/arraydb/ArrayDB.py	/^class set_fillvalue_args:$/;"	c
+set_fillvalue_result	gen-py/arraydb/ArrayDB.py	/^class set_fillvalue_result:$/;"	c
+set_index_type	gen-py/arraydb/ArrayDB.py	/^  def set_index_type(self, index_type):$/;"	m	class:Client
+set_index_type	gen-py/arraydb/ArrayDB.py	/^  def set_index_type(self, index_type):$/;"	m	class:Iface
+set_index_type_args	gen-py/arraydb/ArrayDB.py	/^class set_index_type_args:$/;"	c
+set_index_type_result	gen-py/arraydb/ArrayDB.py	/^class set_index_type_result:$/;"	c
+set_para	ArrayDBHandler.py	/^    def set_para(self, key, value):$/;"	m	class:ArrayDBHandler
+set_para	gen-py/arraydb/ArrayDB.py	/^  def set_para(self, key, value):$/;"	m	class:Client
+set_para	gen-py/arraydb/ArrayDB.py	/^  def set_para(self, key, value):$/;"	m	class:Iface
+set_para_args	gen-py/arraydb/ArrayDB.py	/^class set_para_args:$/;"	c
+set_para_result	gen-py/arraydb/ArrayDB.py	/^class set_para_result:$/;"	c
+set_time	gen-py/arraydb/ArrayDB.py	/^  def set_time(self, flag):$/;"	m	class:Client
+set_time	gen-py/arraydb/ArrayDB.py	/^  def set_time(self, flag):$/;"	m	class:Iface
+set_time_args	gen-py/arraydb/ArrayDB.py	/^class set_time_args:$/;"	c
+set_time_result	gen-py/arraydb/ArrayDB.py	/^class set_time_result:$/;"	c
+store	ArrayDBHandler.py	/^    def store(self, array, array_name):$/;"	m	class:ArrayDBHandler
+store	gen-py/arraydb/ArrayDB.py	/^  def store(self, array, array_name):$/;"	m	class:Client
+store	gen-py/arraydb/ArrayDB.py	/^  def store(self, array, array_name):$/;"	m	class:Iface
+store_args	gen-py/arraydb/ArrayDB.py	/^class store_args:$/;"	c
+store_result	gen-py/arraydb/ArrayDB.py	/^class store_result:$/;"	c
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:create_arrinfo_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:create_arrinfo_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:create_indexinfo_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:create_indexinfo_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:echo_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:echo_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:executeQuery_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:executeQuery_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:filter_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:filter_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:load_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:load_chunk_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:load_chunk_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:load_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_fillvalue_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_fillvalue_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_index_type_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_index_type_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_para_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_para_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_time_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:set_time_result
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:store_args
+validate	gen-py/arraydb/ArrayDB.py	/^  def validate(self):$/;"	m	class:store_result
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:Array
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:ArrayInfo
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:ChunkIndex
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:ChunkInfo
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:DimInfo
+validate	gen-py/arraydb/ttypes.py	/^  def validate(self):$/;"	m	class:IndexInfo
+write	arrayIO.py	/^def write(path, type, num, array):$/;"	f
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:create_arrinfo_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:create_arrinfo_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:create_indexinfo_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:create_indexinfo_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:echo_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:echo_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:executeQuery_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:executeQuery_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:filter_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:filter_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:load_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:load_chunk_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:load_chunk_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:load_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_fillvalue_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_fillvalue_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_index_type_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_index_type_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_para_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_para_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_time_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:set_time_result
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:store_args
+write	gen-py/arraydb/ArrayDB.py	/^  def write(self, oprot):$/;"	m	class:store_result
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:Array
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:ArrayInfo
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:ChunkIndex
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:ChunkInfo
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:DimInfo
+write	gen-py/arraydb/ttypes.py	/^  def write(self, oprot):$/;"	m	class:IndexInfo

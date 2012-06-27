@@ -1,0 +1,264 @@
+./test_part pres 51040
+0
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.849538
+1
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.896783
+2
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.913237
+3
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.888541
+4
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.830112
+5
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.913305
+6
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.941079
+7
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.780295
+8
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.921793
+9
+SELECT pres FROM pres WHERE pres<=51040
+size: 388
+time used: 12.796849
+avg: 12.8819193333
+
+
+./test_part pres 51443
+0
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.822522
+1
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.930209
+2
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.808479
+3
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.822368
+4
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.905636
+5
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.816859
+6
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.789170
+7
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.838246
+8
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.895801
+9
+SELECT pres FROM pres WHERE pres<=51443
+size: 3877
+time used: 12.830440
+avg: 12.837706
+
+
+./test_part pres 52191
+0
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 13.034723
+1
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.812326
+2
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.817953
+3
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.792951
+4
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.835442
+5
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 13.235082
+6
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 13.074590
+7
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.895910
+8
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.792938
+9
+SELECT pres FROM pres WHERE pres<=52191
+size: 38690
+time used: 12.901504
+avg: 12.8829763333
+
+
+./test_part pres 54095
+0
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.735212
+1
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.823861
+2
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.677049
+3
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.790849
+4
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.774254
+5
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.743578
+6
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.707659
+7
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.774143
+8
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.740961
+9
+SELECT pres FROM pres WHERE pres<=54095
+size: 387354
+time used: 15.799163
+avg: 15.7598328333
+
+
+./test_part pres 58800
+0
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.967510
+1
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.993850
+2
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.977378
+3
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.904949
+4
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.869087
+5
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 14.085562
+6
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.913364
+7
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 13.868958
+8
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 14.043979
+9
+SELECT pres FROM pres WHERE pres<=58800
+size: 3875008
+time used: 14.013279
+avg: 13.9617216667
+
+
+./test_part pres 67200
+0
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.516068
+1
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.557771
+2
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.607294
+3
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.538269
+4
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.612985
+5
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.516229
+6
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.474622
+7
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.573732
+8
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.574589
+9
+SELECT pres FROM pres WHERE pres<=67200
+size: 38736687
+time used: 13.450994
+avg: 13.5461096667
+
+

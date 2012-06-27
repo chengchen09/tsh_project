@@ -1,0 +1,9 @@
+arraydb_server
+arraydb_client
+simple_client
+tags
+gen-cpp/
+*.swp
+*.dat
+*.o
+arraydb.conf

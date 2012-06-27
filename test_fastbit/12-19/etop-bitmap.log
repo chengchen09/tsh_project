@@ -1,0 +1,264 @@
+./test_part etop -10215
+0
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.282532
+1
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.186389
+2
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.071309
+3
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.069496
+4
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.068633
+5
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.069339
+6
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.068776
+7
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.069167
+8
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.069147
+9
+SELECT etop FROM etop WHERE etop<=-10215
+size: 234
+time used: 0.069046
+avg: 0.069584
+
+
+./test_part etop -9575
+0
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.903683
+1
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 4.037845
+2
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 4.111109
+3
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.911238
+4
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.971090
+5
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 4.096038
+6
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.954556
+7
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.902922
+8
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 4.020907
+9
+SELECT etop FROM etop WHERE etop<=-9575
+size: 2337
+time used: 3.937969
+avg: 3.9722675
+
+
+./test_part etop -8505
+0
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 4.013557
+1
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.897082
+2
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 4.038728
+3
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.897325
+4
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.978718
+5
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.897169
+6
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 4.038598
+7
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.897064
+8
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 4.030360
+9
+SELECT etop FROM etop WHERE etop<=-8505
+size: 23333
+time used: 3.897146
+avg: 3.95237916667
+
+
+./test_part etop -6665
+0
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.965632
+1
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.872439
+2
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.856316
+3
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.857000
+4
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.857245
+5
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.907192
+6
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.898938
+7
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.882106
+8
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.957094
+9
+SELECT etop FROM etop WHERE etop<=-6665
+size: 234360
+time used: 4.898890
+avg: 4.886135
+
+
+./test_part etop -5876
+0
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.183576
+1
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.207172
+2
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.208902
+3
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.175421
+4
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.200380
+5
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.158635
+6
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.208909
+7
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.208621
+8
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.315370
+9
+SELECT etop FROM etop WHERE etop<=-5876
+size: 2348442
+time used: 6.217231
+avg: 6.20292666667
+
+
+./test_part etop -5080
+0
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.957989
+1
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.893006
+2
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.335134
+3
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.967972
+4
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.984743
+5
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.621027
+6
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.992919
+7
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.385060
+8
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 7.593255
+9
+SELECT etop FROM etop WHERE etop<=-5080
+size: 23381759
+time used: 8.075715
+avg: 7.836332
+
+

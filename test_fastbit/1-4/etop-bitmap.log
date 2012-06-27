@@ -1,0 +1,385 @@
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-10215"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.079988 CPU seconds, 3.10668 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.083987 CPU seconds, 3.09798 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.095985 CPU seconds, 3.10619 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.085987 CPU seconds, 3.08973 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.093985 CPU seconds, 3.09792 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.083987 CPU seconds, 3.07293 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.106983 CPU seconds, 3.1149 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.100985 CPU seconds, 3.07297 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.096986 CPU seconds, 3.08125 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10215) produced 234 hits, took 0.081988 CPU seconds, 3.09776 elapsed seconds
+after sorted:
+3.07293
+3.07297
+3.08125
+3.08973
+3.09776
+3.09792
+3.09798
+3.10619
+3.10668
+3.1149
+avg: 3.0958475
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-9575"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.090986 CPU seconds, 3.13116 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.072989 CPU seconds, 3.07301 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.06399 CPU seconds, 3.06473 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.094985 CPU seconds, 3.07282 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.088986 CPU seconds, 3.0644 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.161975 CPU seconds, 3.13959 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.071989 CPU seconds, 3.08115 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.115982 CPU seconds, 3.08117 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.102984 CPU seconds, 3.08113 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-9575) produced 2337 hits, took 0.092986 CPU seconds, 3.10665 elapsed seconds
+after sorted:
+3.0644
+3.06473
+3.07282
+3.07301
+3.08113
+3.08115
+3.08117
+3.10665
+3.13116
+3.13959
+avg: 3.079115
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-8505"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.093985 CPU seconds, 3.05614 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.083987 CPU seconds, 3.02287 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.096986 CPU seconds, 3.03963 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.103985 CPU seconds, 3.03957 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.092986 CPU seconds, 3.0646 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.06799 CPU seconds, 3.03126 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.121982 CPU seconds, 3.06465 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.093986 CPU seconds, 3.03958 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.105985 CPU seconds, 3.05632 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-8505) produced 23333 hits, took 0.072989 CPU seconds, 3.03119 elapsed seconds
+after sorted:
+3.02287
+3.03119
+3.03126
+3.03957
+3.03958
+3.03963
+3.05614
+3.05632
+3.0646
+3.06465
+avg: 3.04373
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-6665"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.156976 CPU seconds, 4.55567 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.166975 CPU seconds, 4.61366 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.235964 CPU seconds, 4.52231 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.177973 CPU seconds, 4.52177 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.20197 CPU seconds, 4.54714 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.157975 CPU seconds, 4.48042 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.168974 CPU seconds, 4.56381 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.166974 CPU seconds, 4.49707 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.186972 CPU seconds, 4.49697 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-6665) produced 234360 hits, took 0.158976 CPU seconds, 4.48868 elapsed seconds
+after sorted:
+4.48042
+4.48868
+4.49697
+4.49707
+4.52177
+4.52231
+4.54714
+4.55567
+4.56381
+4.61366
+avg: 4.5220725
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-5876"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.425936 CPU seconds, 5.5671 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.439933 CPU seconds, 5.56693 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.45693 CPU seconds, 5.63376 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.418936 CPU seconds, 5.592 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.417936 CPU seconds, 5.54039 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.365944 CPU seconds, 5.53451 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.450931 CPU seconds, 5.60673 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.443932 CPU seconds, 5.55867 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.445933 CPU seconds, 5.62549 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5876) produced 2348442 hits, took 0.440933 CPU seconds, 5.51686 elapsed seconds
+after sorted:
+5.51686
+5.53451
+5.54039
+5.55867
+5.56693
+5.5671
+5.592
+5.60673
+5.62549
+5.63376
+avg: 5.571175
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-5080"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.792879 CPU seconds, 7.90594 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.929859 CPU seconds, 7.99093 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.804877 CPU seconds, 8.06592 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.980851 CPU seconds, 7.85787 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 1.14483 CPU seconds, 7.90631 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.848871 CPU seconds, 7.88253 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.908862 CPU seconds, 7.84079 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.882865 CPU seconds, 7.95696 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.839872 CPU seconds, 7.89797 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-5080) produced 23381759 hits, took 0.843871 CPU seconds, 7.88245 elapsed seconds
+after sorted:
+7.84079
+7.85787
+7.88245
+7.88253
+7.89797
+7.90594
+7.90631
+7.95696
+7.99093
+8.06592
+avg: 7.8981875
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-4054"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.79673 CPU seconds, 13.0217 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.45678 CPU seconds, 13.0908 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.52877 CPU seconds, 13.0209 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.68074 CPU seconds, 13.0538 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.53077 CPU seconds, 13.0464 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.91271 CPU seconds, 13.0386 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.47677 CPU seconds, 13.0661 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.44478 CPU seconds, 13.1447 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.56776 CPU seconds, 13.1485 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-4054) produced 69997259 hits, took 1.57676 CPU seconds, 13.0465 elapsed seconds
+after sorted:
+13.0209
+13.0217
+13.0386
+13.0464
+13.0465
+13.0538
+13.0661
+13.0908
+13.1447
+13.1485
+avg: 13.0532
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-2457"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.81372 CPU seconds, 16.0258 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.63975 CPU seconds, 15.9172 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.81173 CPU seconds, 15.9505 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.70474 CPU seconds, 15.9834 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.78573 CPU seconds, 15.8757 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.63075 CPU seconds, 16.1339 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.78773 CPU seconds, 15.9423 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.68674 CPU seconds, 15.9423 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.69174 CPU seconds, 15.9256 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-2457) produced 116663286 hits, took 1.69774 CPU seconds, 16.3415 elapsed seconds
+after sorted:
+15.8757
+15.9172
+15.9256
+15.9423
+15.9423
+15.9505
+15.9834
+16.0258
+16.1339
+16.3415
+avg: 15.954625
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=-10"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.944856 CPU seconds, 5.76421 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.6599 CPU seconds, 5.61527 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.788881 CPU seconds, 5.61458 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.752885 CPU seconds, 5.6067 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.974852 CPU seconds, 5.59774 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.902863 CPU seconds, 5.58075 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.633904 CPU seconds, 5.55603 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.742887 CPU seconds, 5.64766 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.823875 CPU seconds, 5.57303 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=-10) produced 163361042 hits, took 0.743887 CPU seconds, 5.58106 elapsed seconds
+after sorted:
+5.55603
+5.57303
+5.58075
+5.58106
+5.59774
+5.6067
+5.61458
+5.61527
+5.64766
+5.76421
+avg: 5.60002
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=565"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.818875 CPU seconds, 9.13059 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.760885 CPU seconds, 9.27207 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.776882 CPU seconds, 9.13902 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.843871 CPU seconds, 9.14705 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.828873 CPU seconds, 9.19011 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.85287 CPU seconds, 9.11371 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.783881 CPU seconds, 9.16381 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.842873 CPU seconds, 9.12207 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.765884 CPU seconds, 9.09698 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=565) produced 209994936 hits, took 0.874867 CPU seconds, 9.12221 elapsed seconds
+after sorted:
+9.09698
+9.11371
+9.12207
+9.12221
+9.13059
+9.13902
+9.14705
+9.16381
+9.19011
+9.27207
+avg: 9.1347175
+
+
+/home/bus/chen/local/bin/ibis -d ./detop -q "where etop<=8000"
+0
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0 CPU seconds, 0.105075 elapsed seconds
+1
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.001 CPU seconds, 0.0666308 elapsed seconds
+2
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0 CPU seconds, 0.0503099 elapsed seconds
+3
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.000999 CPU seconds, 0.0500739 elapsed seconds
+4
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.002 CPU seconds, 0.0503271 elapsed seconds
+5
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.001 CPU seconds, 0.0499752 elapsed seconds
+6
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0 CPU seconds, 0.0503201 elapsed seconds
+7
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.002 CPU seconds, 0.050271 elapsed seconds
+8
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.003 CPU seconds, 0.0503049 elapsed seconds
+9
+doQuery:: evaluate( FROM ETOPO1 WHERE etop<=8000) produced 233312396 hits, took 0.001 CPU seconds, 0.0500131 elapsed seconds
+after sorted:
+0.0499752
+0.0500131
+0.0500739
+0.050271
+0.0503049
+0.0503099
+0.0503201
+0.0503271
+0.0666308
+0.105075
+avg: 0.050301475
+
+

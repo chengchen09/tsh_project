@@ -1,0 +1,1084 @@
+./simple_client "set indextype no_index"
+./simple_client "select etop from etop where elevation < -10215"
+0: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 0.261054
+worker-1 used time: 1.135641
+
+1: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 0.255699
+worker-1 used time: 1.120111
+
+2: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 0.7019339999999999
+worker-1 used time: 1.603609
+
+3: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.634337
+worker-1 used time: 9.929487
+
+4: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.700487000000001
+worker-1 used time: 9.996347
+
+5: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.76535
+worker-1 used time: 10.062763
+
+6: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.748265999999999
+worker-1 used time: 10.044383
+
+7: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.791905
+worker-1 used time: 10.087268
+
+8: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.68135
+worker-1 used time: 9.994752999999999
+
+9: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.632936000000001
+worker-1 used time: 9.928716
+
+avg_io: 8.6622775	avg_all: 9.96232575
+./simple_client "select etop from etop where elevation < -9575"
+0: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 9.366528000000001
+worker-1 used time: 10.663511
+
+1: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.793509
+worker-1 used time: 10.09026
+
+2: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.724558
+worker-1 used time: 10.020909
+
+3: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.702057
+worker-1 used time: 10.022675
+
+4: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.741996
+worker-1 used time: 10.036921
+
+5: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 9.251201999999999
+worker-1 used time: 10.54678
+
+6: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.725165000000001
+worker-1 used time: 10.02077
+
+7: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.732528
+worker-1 used time: 10.028756
+
+8: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.657961999999999
+worker-1 used time: 9.954603000000001
+
+9: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.698981
+worker-1 used time: 10.020371
+
+avg_io: 8.72528475	avg_all: 10.02731525
+./simple_client "select etop from etop where elevation < -8505"
+0: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.77481
+worker-1 used time: 10.070356
+
+1: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.718420999999999
+worker-1 used time: 10.013012
+
+2: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.764794
+worker-1 used time: 10.062338
+
+3: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.777464
+worker-1 used time: 10.073709
+
+4: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.700346
+worker-1 used time: 9.996492
+
+5: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.711017
+worker-1 used time: 10.012173
+
+6: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.683572999999999
+worker-1 used time: 9.978823999999999
+
+7: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.725166
+worker-1 used time: 10.020589
+
+8: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.691217999999999
+worker-1 used time: 9.987309
+
+9: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.743003
+worker-1 used time: 10.038206
+
+avg_io: 8.72440175	avg_all: 10.020995
+./simple_client "select etop from etop where elevation < -6665"
+0: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.629078
+worker-1 used time: 9.954426
+
+1: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.714619000000001
+worker-1 used time: 10.012485
+
+2: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.706301
+worker-1 used time: 10.003394
+
+3: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.696745999999999
+worker-1 used time: 9.995373000000001
+
+4: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.689567
+worker-1 used time: 9.987019999999999
+
+5: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.85647
+worker-1 used time: 10.153749
+
+6: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.703578
+worker-1 used time: 10.019938
+
+7: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.733513
+worker-1 used time: 10.02844
+
+8: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.799787999999999
+worker-1 used time: 10.095712
+
+9: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.694264
+worker-1 used time: 9.991403
+
+avg_io: 8.705311	avg_all: 10.0077975
+./simple_client "select etop from etop where elevation < -5876"
+0: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.633015
+worker-1 used time: 9.94496
+
+1: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.798064999999999
+worker-1 used time: 10.11262
+
+2: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.64325
+worker-1 used time: 9.954022999999999
+
+3: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.559635
+worker-1 used time: 9.871147000000001
+
+4: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.671279
+worker-1 used time: 9.982495999999999
+
+5: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.651344999999999
+worker-1 used time: 9.962832000000001
+
+6: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.757599000000001
+worker-1 used time: 10.07032
+
+7: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.613580000000001
+worker-1 used time: 9.953993000000001
+
+8: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.693243000000001
+worker-1 used time: 10.005304
+
+9: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.717525999999999
+worker-1 used time: 10.029254
+
+avg_io: 8.66477925	avg_all: 9.97616375
+./simple_client "select etop from etop where elevation < -5080"
+0: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.679863000000001
+worker-1 used time: 10.045806
+
+1: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.682541000000001
+worker-1 used time: 10.047982
+
+2: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.640355
+worker-1 used time: 10.004582
+
+3: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.684599
+worker-1 used time: 10.070508
+
+4: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.67998
+worker-1 used time: 10.04493
+
+5: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.580849000000001
+worker-1 used time: 9.946201
+
+6: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.672177
+worker-1 used time: 10.037585
+
+7: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.780498999999999
+worker-1 used time: 10.146261
+
+8: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.648842999999999
+worker-1 used time: 10.031467
+
+9: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 3655
+ safe chunks: 0
+ IO time used: 8.639793000000001
+worker-1 used time: 10.003676
+
+avg_io: 8.67021575	avg_all: 10.039947
+
+
+./simple_client "set indextype chunk_index"
+./simple_client "select etop from etop where elevation < -10215"
+0: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.073145
+worker-1 used time: 0.07502499999999999
+
+1: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.07266499999999999
+worker-1 used time: 0.074527
+
+2: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.106065
+worker-1 used time: 0.107924
+
+3: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.072773
+worker-1 used time: 0.074627
+
+4: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.072834
+worker-1 used time: 0.07470300000000001
+
+5: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.095467
+worker-1 used time: 0.09733799999999999
+
+6: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.064286
+worker-1 used time: 0.066162
+
+7: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.072785
+worker-1 used time: 0.074666
+
+8: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.07266400000000001
+worker-1 used time: 0.07452400000000001
+
+9: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.072521
+worker-1 used time: 0.074383
+
+10: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.064373
+worker-1 used time: 0.06623
+
+11: 
+count: 234
+ratio: 1.002947e-06
+ check chunks: 3
+ safe chunks: 0
+ IO time used: 0.064566
+worker-1 used time: 0.066432
+
+avg_io: 0.072707	avg_all: 0.0745716666667
+./simple_client "select etop from etop where elevation < -9575"
+0: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.175254
+worker-1 used time: 0.180452
+
+1: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.192029
+worker-1 used time: 0.197228
+
+2: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.191827
+worker-1 used time: 0.1970190000000001
+
+3: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.19177
+worker-1 used time: 0.196976
+
+4: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.167242
+worker-1 used time: 0.172426
+
+5: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.175623
+worker-1 used time: 0.180804
+
+6: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.192095
+worker-1 used time: 0.197304
+
+7: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.175502
+worker-1 used time: 0.180708
+
+8: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.20885
+worker-1 used time: 0.214026
+
+9: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.20054
+worker-1 used time: 0.205781
+
+10: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.200222
+worker-1 used time: 0.205432
+
+11: 
+count: 2337
+ratio: 1.001661e-05
+ check chunks: 12
+ safe chunks: 0
+ IO time used: 0.181517
+worker-1 used time: 0.186722
+
+avg_io: 0.187476833333	avg_all: 0.1926755
+./simple_client "select etop from etop where elevation < -8505"
+0: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.356887
+worker-1 used time: 0.367796
+
+1: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.348495
+worker-1 used time: 0.359389
+
+2: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.37334
+worker-1 used time: 0.384406
+
+3: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.356215
+worker-1 used time: 0.367732
+
+4: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.340175
+worker-1 used time: 0.351114
+
+5: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.348548
+worker-1 used time: 0.359435
+
+6: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.340228
+worker-1 used time: 0.351167
+
+7: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.398571
+worker-1 used time: 0.409437
+
+8: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.356781
+worker-1 used time: 0.367694
+
+9: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.340107
+worker-1 used time: 0.351016
+
+10: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.3484660000000001
+worker-1 used time: 0.359399
+
+11: 
+count: 23333
+ratio: 0.0001000075
+ check chunks: 27
+ safe chunks: 0
+ IO time used: 0.365168
+worker-1 used time: 0.3760869999999999
+
+avg_io: 0.352565333333	avg_all: 0.363574166667
+./simple_client "select etop from etop where elevation < -6665"
+0: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.445496
+worker-1 used time: 1.508595
+
+1: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.387197
+worker-1 used time: 1.450312
+
+2: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.379132
+worker-1 used time: 1.442123
+
+3: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.345588
+worker-1 used time: 1.40865
+
+4: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.353951
+worker-1 used time: 1.417056
+
+5: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.403768
+worker-1 used time: 1.466835
+
+6: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.453803
+worker-1 used time: 1.516853
+
+7: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.337224
+worker-1 used time: 1.400378
+
+8: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.412326
+worker-1 used time: 1.475429
+
+9: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.304013
+worker-1 used time: 1.367056
+
+10: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.378998
+worker-1 used time: 1.442015
+
+11: 
+count: 234360
+ratio: 0.00100449
+ check chunks: 168
+ safe chunks: 0
+ IO time used: 1.329082
+worker-1 used time: 1.3921
+
+avg_io: 1.37477233333	avg_all: 1.43783183333
+./simple_client "select etop from etop where elevation < -5876"
+0: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.909077
+worker-1 used time: 3.13051
+
+1: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.800776
+worker-1 used time: 3.022233
+
+2: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.85069
+worker-1 used time: 3.072298
+
+3: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.817682
+worker-1 used time: 3.038997
+
+4: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.725869
+worker-1 used time: 2.947328
+
+5: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.834267
+worker-1 used time: 3.055772
+
+6: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.778216
+worker-1 used time: 3.005647
+
+7: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.754031
+worker-1 used time: 2.980681
+
+8: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.733813
+worker-1 used time: 2.955673
+
+9: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.792448
+worker-1 used time: 3.013879
+
+10: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.784136
+worker-1 used time: 3.005744
+
+11: 
+count: 2348442
+ratio: 0.01006565
+ check chunks: 568
+ safe chunks: 0
+ IO time used: 2.667356
+worker-1 used time: 2.889097
+
+avg_io: 2.7878815	avg_all: 3.01119683333
+./simple_client "select etop from etop where elevation < -5080"
+0: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.496889
+worker-1 used time: 5.00777
+
+1: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.513287
+worker-1 used time: 5.024463
+
+2: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.337974
+worker-1 used time: 4.849613
+
+3: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.280176
+worker-1 used time: 4.791242
+
+4: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.371591
+worker-1 used time: 4.882799
+
+5: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.388392
+worker-1 used time: 4.899534
+
+6: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.338971
+worker-1 used time: 4.849622
+
+7: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.388782
+worker-1 used time: 4.899559
+
+8: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.37594
+worker-1 used time: 4.907954
+
+9: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.321692
+worker-1 used time: 4.832621
+
+10: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.271927
+worker-1 used time: 4.78288
+
+11: 
+count: 23381759
+ratio: 0.1002165
+ check chunks: 1219
+ safe chunks: 0
+ IO time used: 4.330253
+worker-1 used time: 4.841061
+
+avg_io: 4.35932716667	avg_all: 4.87036466667

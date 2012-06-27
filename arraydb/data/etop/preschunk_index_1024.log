@@ -1,0 +1,1 @@
+../src/simple_client "select pres from pres where pres < 51040"

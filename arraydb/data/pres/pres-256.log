@@ -1,0 +1,1084 @@
+./simple_client "set indextype no_index"
+./simple_client "select pres from pres where pres < 51040"
+0: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 1.065123
+worker-1 used time: 2.517841
+
+1: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 0.646933
+worker-1 used time: 2.144179
+
+2: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 0.756904
+worker-1 used time: 2.199436
+
+3: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 7.221491
+worker-1 used time: 9.08329
+
+4: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.457851
+worker-1 used time: 13.625626
+
+5: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.56587
+worker-1 used time: 13.733875
+
+6: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.370106
+worker-1 used time: 13.567148
+
+7: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.733033
+worker-1 used time: 13.900141
+
+8: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.638946
+worker-1 used time: 13.806324
+
+9: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.433932
+worker-1 used time: 13.60066
+
+avg_io: 10.370845	avg_all: 12.469181
+./simple_client "select pres from pres where pres < 51443"
+0: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.454471
+worker-1 used time: 13.650438
+
+1: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.565836
+worker-1 used time: 13.733684
+
+2: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.872766
+worker-1 used time: 14.041812
+
+3: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.475573
+worker-1 used time: 13.642453
+
+4: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.542281
+worker-1 used time: 13.742048
+
+5: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.5299
+worker-1 used time: 13.698235
+
+6: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.515902
+worker-1 used time: 13.683712
+
+7: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.466689
+worker-1 used time: 13.63388
+
+8: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.478412
+worker-1 used time: 13.675354
+
+9: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.808341
+worker-1 used time: 13.975079
+
+avg_io: 11.5225125	avg_all: 13.69774625
+./simple_client "select pres from pres where pres < 52191"
+0: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.465495
+worker-1 used time: 13.633954
+
+1: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.457964
+worker-1 used time: 13.625333
+
+2: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.434188
+worker-1 used time: 13.633662
+
+3: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 12.581627
+worker-1 used time: 14.749519
+
+4: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.657351
+worker-1 used time: 13.825385
+
+5: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.606566
+worker-1 used time: 13.775408
+
+6: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.620646
+worker-1 used time: 13.81698
+
+7: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.382483
+worker-1 used time: 13.550698
+
+8: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.490034
+worker-1 used time: 13.658943
+
+9: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.729932
+worker-1 used time: 13.897913
+
+avg_io: 11.54568525	avg_all: 13.72132125
+./simple_client "select pres from pres where pres < 54095"
+0: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.651065
+worker-1 used time: 13.858604
+
+1: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.396422
+worker-1 used time: 13.567318
+
+2: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.501175
+worker-1 used time: 13.675321
+
+3: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.516265
+worker-1 used time: 13.692195
+
+4: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.613501
+worker-1 used time: 13.814659
+
+5: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.45295
+worker-1 used time: 13.625383
+
+6: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.59145
+worker-1 used time: 13.766899
+
+7: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.550144
+worker-1 used time: 13.725191
+
+8: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.512766
+worker-1 used time: 13.717103
+
+9: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.483428
+worker-1 used time: 13.658725
+
+avg_io: 11.5200875	avg_all: 13.7024525
+./simple_client "select pres from pres where pres < 58800"
+0: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.619933
+worker-1 used time: 13.825264
+
+1: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.827811
+worker-1 used time: 14.031117
+
+2: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.413428
+worker-1 used time: 13.641906
+
+3: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.596937
+worker-1 used time: 13.801359
+
+4: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.538114
+worker-1 used time: 13.742139
+
+5: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.638092
+worker-1 used time: 13.841797
+
+6: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.422621
+worker-1 used time: 13.658865
+
+7: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.480992
+worker-1 used time: 13.683722
+
+8: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.678052
+worker-1 used time: 13.881527
+
+9: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.40004
+worker-1 used time: 13.600318
+
+avg_io: 11.558994	avg_all: 13.763121
+./simple_client "select pres from pres where pres < 67200"
+0: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.193629
+worker-1 used time: 13.583701
+
+1: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.558527
+worker-1 used time: 13.916615
+
+2: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.490976
+worker-1 used time: 13.850469
+
+3: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.25847
+worker-1 used time: 13.617016
+
+4: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.426994
+worker-1 used time: 13.817148
+
+5: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.329909
+worker-1 used time: 13.689873
+
+6: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.515233
+worker-1 used time: 13.875444
+
+7: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.283009
+worker-1 used time: 13.642216
+
+8: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.374591
+worker-1 used time: 13.767079
+
+9: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 6003
+ safe chunks: 0
+ IO time used: 11.49119
+worker-1 used time: 13.850257
+
+avg_io: 11.405671	avg_all: 13.78108925
+
+
+./simple_client "set indextype chunk_index"
+./simple_client "select pres from pres where pres < 51040"
+0: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.078123
+worker-1 used time: 0.08157300000000001
+
+1: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.086409
+worker-1 used time: 0.089867
+
+2: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.06993199999999999
+worker-1 used time: 0.073382
+
+3: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.086215
+worker-1 used time: 0.089681
+
+4: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.100773
+worker-1 used time: 0.104206
+
+5: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.09472800000000001
+worker-1 used time: 0.098181
+
+6: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.06970700000000001
+worker-1 used time: 0.073154
+
+7: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.06968299999999999
+worker-1 used time: 0.073128
+
+8: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.076013
+worker-1 used time: 0.07947499999999996
+
+9: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.103219
+worker-1 used time: 0.106688
+
+10: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.069785
+worker-1 used time: 0.073203
+
+11: 
+count: 388
+ratio: 1.002767e-06
+ check chunks: 7
+ safe chunks: 0
+ IO time used: 0.102856
+worker-1 used time: 0.106356
+
+avg_io: 0.0819033333333	avg_all: 0.0853598333333
+./simple_client "select pres from pres where pres < 51443"
+0: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.323886
+worker-1 used time: 0.33741
+
+1: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.276089
+worker-1 used time: 0.289636
+
+2: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.284568
+worker-1 used time: 0.298094
+
+3: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.292856
+worker-1 used time: 0.306376
+
+4: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.348924
+worker-1 used time: 0.36247
+
+5: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.317762
+worker-1 used time: 0.331316
+
+6: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.284489
+worker-1 used time: 0.298009
+
+7: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.326398
+worker-1 used time: 0.339913
+
+8: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.298804
+worker-1 used time: 0.312389
+
+9: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.267918
+worker-1 used time: 0.281437
+
+10: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.292803
+worker-1 used time: 0.306326
+
+11: 
+count: 3877
+ratio: 1.001992e-05
+ check chunks: 34
+ safe chunks: 0
+ IO time used: 0.2846
+worker-1 used time: 0.298136
+
+avg_io: 0.295232166667	avg_all: 0.308772833333
+./simple_client "select pres from pres where pres < 52191"
+0: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.831855
+worker-1 used time: 0.870599
+
+1: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.784119
+worker-1 used time: 0.822808
+
+2: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.750906
+worker-1 used time: 0.789616
+
+3: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.825721
+worker-1 used time: 0.864425
+
+4: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.848328
+worker-1 used time: 0.887123
+
+5: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.867283
+worker-1 used time: 0.9060010000000001
+
+6: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.783944
+worker-1 used time: 0.822713
+
+7: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.8004910000000001
+worker-1 used time: 0.83931
+
+8: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.781705
+worker-1 used time: 0.8204050000000001
+
+9: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.759011
+worker-1 used time: 0.797733
+
+10: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.7674609999999999
+worker-1 used time: 0.806128
+
+11: 
+count: 38690
+ratio: 9.999245e-05
+ check chunks: 100
+ safe chunks: 0
+ IO time used: 0.725751
+worker-1 used time: 0.7645109999999999
+
+avg_io: 0.7905735	avg_all: 0.829298166667
+./simple_client "select pres from pres where pres < 54095"
+0: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.530781
+worker-1 used time: 1.636722
+
+1: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.52518
+worker-1 used time: 1.631027
+
+2: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.692529
+worker-1 used time: 1.80581
+
+3: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.591479
+worker-1 used time: 1.697405
+
+4: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.572153
+worker-1 used time: 1.678136
+
+5: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.515933
+worker-1 used time: 1.622003
+
+6: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.674944
+worker-1 used time: 1.780829
+
+7: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.541443
+worker-1 used time: 1.647357
+
+8: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.508219
+worker-1 used time: 1.614071
+
+9: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.533143
+worker-1 used time: 1.639178
+
+10: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.549907
+worker-1 used time: 1.655844
+
+11: 
+count: 387354
+ratio: 0.001001098
+ check chunks: 262
+ safe chunks: 0
+ IO time used: 1.572228
+worker-1 used time: 1.678303
+
+avg_io: 1.5499425	avg_all: 1.65592333333
+./simple_client "select pres from pres where pres < 58800"
+0: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.904027
+worker-1 used time: 4.319985
+
+1: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.796232
+worker-1 used time: 4.211558
+
+2: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.81523
+worker-1 used time: 4.24308
+
+3: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.846389
+worker-1 used time: 4.261675
+
+4: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.829435
+worker-1 used time: 4.244884
+
+5: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.852136
+worker-1 used time: 4.267784
+
+6: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.904992
+worker-1 used time: 4.320025
+
+7: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.846248
+worker-1 used time: 4.261709
+
+8: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.835091
+worker-1 used time: 4.251064
+
+9: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.84566
+worker-1 used time: 4.261761
+
+10: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.787331
+worker-1 used time: 4.203445
+
+11: 
+count: 3875008
+ratio: 0.01001477
+ check chunks: 1021
+ safe chunks: 0
+ IO time used: 3.884781
+worker-1 used time: 4.30097
+
+avg_io: 3.84249316667	avg_all: 4.25814616667
+./simple_client "select pres from pres where pres < 67200"
+0: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.414504
+worker-1 used time: 8.685893999999999
+
+1: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.576552
+worker-1 used time: 8.85309
+
+2: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.449228
+worker-1 used time: 8.719702999999999
+
+3: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.424587
+worker-1 used time: 8.694661999999999
+
+4: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.481692
+worker-1 used time: 8.752668
+
+5: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.566532
+worker-1 used time: 8.836627999999999
+
+6: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.25035
+worker-1 used time: 8.519898
+
+7: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.385925
+worker-1 used time: 8.686037000000001
+
+8: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.307535
+worker-1 used time: 8.578244
+
+9: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.616298
+worker-1 used time: 8.886043000000001
+
+10: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.331255
+worker-1 used time: 8.603031
+
+11: 
+count: 38736687
+ratio: 0.1001131
+ check chunks: 2942
+ safe chunks: 0
+ IO time used: 7.206918
+worker-1 used time: 8.477986
+
+avg_io: 7.41453183333	avg_all: 8.6903325

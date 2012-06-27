@@ -1,0 +1,840 @@
+/***********************************************************************
+ * Filename : ArrayDBHandler.h
+ * Create : chen 2011-11-16
+ * Created Time: 2011-11-16
+ * Description: 
+ * Modified   : 
+ * **********************************************************************/
+#ifndef ARRAYDB_HANDLER_H
+#define ARRAYDB_HANDLER_H
+
+#include "ArrayDB.h"
+#include <protocol/TBinaryProtocol.h>
+#include <server/TSimpleServer.h>
+#include <server/TThreadPoolServer.h>
+#include <server/TThreadedServer.h>
+#include <server/TNonblockingServer.h>
+#include <transport/TServerSocket.h>
+#include <transport/TBufferTransports.h>
+
+#include <string>
+#include <assert.h>
+#include <stdio.h>
+#include <iostream>
+#include <getopt.h>
+#include <boost/lexical_cast.hpp>
+#include <boost/algorithm/string.hpp>
+
+#include "global.h"
+#include "arraydb_support.h"
+
+using namespace ::apache::thrift;
+using namespace ::apache::thrift::protocol;
+using namespace ::apache::thrift::transport;
+using namespace ::apache::thrift::server;
+
+using boost::shared_ptr;
+using namespace boost;
+using namespace std;
+using namespace arraydb;
+
+/* TODO: Singleton */
+static RoleType local_role;
+RoleType get_local_role() {
+    return local_role;
+}
+
+namespace arraydb {
+
+class ServerConnection {
+    private:	
+	RoleType role;
+	string address;
+	string ip;
+	int node_id;
+	int port;
+	shared_ptr<TTransport> transport;
+	shared_ptr<ArrayDBClient> client;
+    public:
+
+	ServerConnection(RoleType r, string addr, int id): role(r), address(addr), node_id(id) {
+	    std::vector<string> strs; 
+    	    boost::split(strs, addr, is_any_of(":"), token_compress_off);
+    	    ip = strs[0];
+    	    port = lexical_cast<int>(strs[1].data());
+
+    	    shared_ptr<TTransport> socket(new TSocket(ip, port));
+    	    shared_ptr<TTransport> ts(new TFramedTransport(socket));
+    	    transport = ts;
+    	    shared_ptr<TProtocol> protocol(new TBinaryProtocol(transport));
+    	    shared_ptr<ArrayDBClient> clt(new ArrayDBClient(protocol));
+    	    client = clt;
+    	}
+
+	~ServerConnection() {
+	}
+
+	shared_ptr<ArrayDBClient> get_client() {
+	    /* TODO: everytime open */
+	    transport->open();
+	    return client;
+	}
+	string get_address() {
+	    return address;
+	}
+	int get_nodeid() {
+	    return node_id;
+	}
+};
+
+/* TODO: Singleton implementation, global variables should use Singleton to avoid pollute namespace */
+static std::vector<ServerConnection> clients;
+static std::vector<ArrayInfo> array_infos;
+
+void push_client(ServerConnection sc) {
+    clients.push_back(sc); 
+}
+
+class ArrayDBHandler : virtual public ArrayDBIf {
+    public:
+	ArrayDBHandler() {
+	    // Your initialization goes here
+	}
+
+	void executeQuery(std::string& _return, const std::string& request, const std::string& data){}
+#if 0
+	{
+	    // Your implementation goes here
+	    /* TODO: size_t */
+	    int64_t i;
+	    ArrayInfo *arrinfo_p;
+	    string query(request);
+	    ArrayDBError status;
+
+	    if (get_local_role() != MASTER) {
+		_return = "error: the server is not a master";
+		printf("error: get a message from client, but I'm not a master\n");
+		return;
+	    }
+
+	    /* create sentence */
+	    if (istarts_with(query, "create")) {
+		erase_first(query, "create");
+		trim(query);
+		if (istarts_with(query, "array")) {
+		    ArrayInfo arrinfo;
+		    DimInfo diminfo;
+		    std::vector<string> strs;
+		    int pos;
+
+		    /* TODO: array id not a good idea */
+		    arrinfo.array_id = array_infos.size();
+		    erase_first(query, "array");
+		    trim(query);
+		    /* array name */
+		    boost::split(strs, query, is_any_of("<"), token_compress_off);
+		    arrinfo.name = trim_copy(strs[0]);
+		    arrinfo_p = find_arrinfo(arrinfo.name);
+		    if (arrinfo_p != NULL) {
+			_return = "array name already exist!";
+			return;
+		    }
+
+		    /* variable name */
+		    query = trim_copy(strs[1]);
+		    split(strs, query, is_any_of(":"), token_compress_off);
+		    arrinfo.var_name = trim_copy(strs[0]);
+		    /* variable type and size */
+		    pos = query.find_first_of(':');
+		    query = query.substr(pos + 1, query.size() - pos - 1);
+		    split(strs, query, is_any_of(">"), token_compress_off);
+		    arrinfo.var_type = get_datatype(trim_copy(strs[0]), &(arrinfo.dtype_size));
+		    /* dimension num */
+		    query = trim_copy_if(strs[1], is_any_of(" []"));
+		    split(strs, query, is_any_of("="), token_compress_off);
+		    arrinfo.ndims = strs.size() - 1;
+		    /* dimension name and length */
+		    arrinfo.nelmts = 1;
+		    for (i = 0; i < arrinfo.ndims; i++) {	
+			diminfo.name = trim_copy(strs[0]);
+			pos = query.find_first_of(':');
+			query = query.substr(pos + 1, query.size() - pos - 1);
+			strs = split(strs, query, is_any_of(","), token_compress_off);
+			diminfo.length = lexical_cast<size_t>(trim_copy(strs[0]));
+			diminfo.chunk_length = lexical_cast<size_t>(trim_copy(strs[1]));
+			diminfo.overlap_length = lexical_cast<size_t>(trim_copy(strs[2]));
+			if (i < (arrinfo.ndims - 1)) {
+			    pos = query.find_first_of(',');
+			    query = query.substr(pos + 1, query.size() - pos - 1);
+			    pos = query.find_first_of(',');
+			    query = query.substr(pos + 1, query.size() - pos - 1);
+			    pos = query.find_first_of(',');
+			    query = query.substr(pos + 1, query.size() - pos - 1);
+			    split(strs, query, is_any_of("="), token_compress_off);
+			}
+			arrinfo.nelmts *= diminfo.length;
+			arrinfo.dims.push_back(diminfo);
+		    }
+
+		    /* map chunk to nodes */
+		    map_chunk(arrinfo, StorageStrategy::ROUND_ROBIN);
+
+		    /* store array info into global variables */
+		    array_infos.push_back(arrinfo);
+
+		    /* wirte array info into disk */
+		    write_arrinfo(arrinfo);
+
+		    /* populate the array info to other nodes */
+		    for (size_t i = 0; i < clients.size(); i++) {
+			clients[i].get_client()->create_arrinfo(arrinfo);
+		    }
+
+		    print_array_info(arrinfo);
+
+		} /* end if (istarts_with(query, "array") */
+	    }/* end if (istarts_with(query, "create"); */
+	    else if (istarts_with(query, "store")) {
+		std::vector<string> strs;
+		string name;
+		boost::split(strs, query, is_any_of(" \t"), token_compress_on);
+		name = strs[1];
+
+		status = distribute_array(_return, name, data);
+		if (status != SUCCESS) {
+		    _return = arraydb_error(status); 
+		}
+	    }
+	    else if (istarts_with(query, "show")) {
+		std::vector<string> strs;
+		boost::split(strs, query, is_any_of(" \t"), token_compress_on);
+
+		arrinfo_p = find_arrinfo(strs[1]);
+		if (arrinfo_p == NULL) {
+		    _return = arraydb_error(ARRAY_NOT_EXIST);
+		}
+		else {
+		    _return = arrinfo_p->name + " <" 
+			+ arrinfo_p->var_name + ": " 
+			+ get_type_str(arrinfo_p->var_type) + "> [";
+		    for (i = 0; i < arrinfo_p->ndims; i++) {
+			_return += arrinfo_p->dims[i].name + " = "
+			    + lexical_cast<string>(arrinfo_p->dims[i].length) + ", "
+			    + lexical_cast<string>(arrinfo_p->dims[i].chunk_length) + ", "
+			    + lexical_cast<string>(arrinfo_p->dims[i].overlap_length) + "; ";
+		    }
+		    _return += "]";
+		    print_array_info(*arrinfo_p);
+		}
+	    }
+	    else if (istarts_with(query, "subarray")) {
+		string name;
+		std::vector<int64_t> first;
+		std::vector<int64_t> last;
+
+		/* parse subarray */
+		status = parse_subarray(query, name, first, last);
+		if (status != SUCCESS) {
+		    _return = arraydb_error(status);
+		}
+
+		status = check_overflow(name, first, last);
+		if (status == SUCCESS) {
+		    /* get data from nodes */
+		    status = execute_subarray(_return, name, first, last);
+		}
+		else {
+		    _return = arraydb_error(status);
+		}
+	    }
+	    printf("\nexecuteQuery: %s\n", request.data());
+	} /* end executeQuery */
+#endif
+
+	/* execute subarray */
+	ArrayDBError execute_subarray(string& data, const string& name, vector<int64_t>& first, vector<int64_t>& last) {
+	    std::vector<int> chunk_ids;
+	    const ArrayInfo *arrinfo_p;
+
+	    arrinfo_p = find_arrinfo(name);
+	    assert(arrinfo_p != NULL);
+
+	    get_subarray_chunkids(chunk_ids, *arrinfo_p, first, last);
+
+	    size_t i;
+	    for (i = 0; i < chunk_ids.size(); i++) {
+		cout<<chunk_ids[i]<<", ";
+	    }
+	    cout<<endl;
+
+	    gather_chunk_data(data, *arrinfo_p, chunk_ids, first, last);
+
+	    return SUCCESS;
+	}
+
+	void get_subarray_chunkids(std::vector<int>& chunk_ids, const ArrayInfo& arrinfo, const std::vector<int64_t>& first, const std::vector<int64_t>& last) {
+	    std::vector<int64_t> first_chunk(arrinfo.ndims, 0);
+	    std::vector<int64_t> last_chunk(arrinfo.ndims, 0);
+	    std::vector<int64_t> chunk_lens(arrinfo.ndims, 0);
+
+	    int i, chunk_id;
+	    int64_t nchunks;
+
+	    /* count chunk coords */
+	    for (i = 0; i < arrinfo.ndims; i++) {
+		first_chunk[i] = first[i] / arrinfo.dims[i].chunk_length;
+		last_chunk[i] = last[i] / arrinfo.dims[i].chunk_length;
+		chunk_lens[i] = last_chunk[i] - first_chunk[i] + 1;
+	    }
+
+	    /* count chunk num */
+	    nchunks = chunk_lens[0];
+	    for (i = 1; i < arrinfo.ndims; i++) {
+		nchunks = nchunks * chunk_lens[i];
+	    }
+
+	    /* count chunk id */
+	    chunk_ids.clear();
+	    for (i = 0; i < nchunks; i++) {
+		chunk_id = count_chunk_id_by_chunk_index(arrinfo, first_chunk, chunk_lens, i);
+		chunk_ids.push_back(chunk_id);
+	    }
+	}
+
+	int count_chunk_id_by_chunk_index(const ArrayInfo& arrinfo, std::vector<int64_t>& first_chunk, std::vector<int64_t>& chunk_lens, int index) {
+	    int chunk_id, i, j, pos;
+	    std::vector<int64_t> chunk_coords(arrinfo.ndims, 0);
+
+	    /* count chunk coords */
+	    pos = index;
+	    for (i = 0, j = arrinfo.ndims - 1; i < arrinfo.ndims; i++, j--) {
+		chunk_coords[j] = first_chunk[j] + pos % chunk_lens[j];
+		pos = pos / chunk_lens[j];
+	    }
+
+	    /* count chunk id */
+	    chunk_id = count_chunk_id_by_chunk_coords(arrinfo, chunk_coords);
+	    return chunk_id;
+	}
+
+	inline int count_chunk_id_by_chunk_coords(const ArrayInfo& arrinfo, std::vector<int64_t>& chunk_coords) {
+	    int chunk_id, i;
+	    chunk_id = chunk_coords[0];
+	    for (i = 1; i < arrinfo.ndims; i++)
+		chunk_id = chunk_id * arrinfo.chunk_dims[i] + chunk_coords[i];
+
+	    return chunk_id;
+	}
+
+	int get_index_by_chunk_id(const std::vector<int>& chunk_ids, int chunk_id) {
+	    size_t i;
+
+	    for (i = 0; i < chunk_ids.size(); i++) {
+		if (chunk_id == chunk_ids[i])
+		    return i;
+	    }
+	    return -1;
+	}
+
+	void gather_chunk_data(string &data, const ArrayInfo& arrinfo, const std::vector<int>& chunk_ids, const std::vector<int64_t>& first, const std::vector<int64_t>& last) {
+	    int node_id, chunk_id, chunk_index;
+	    char *buf;
+	    std::vector<string> chunk_data(chunk_ids.size(), "");
+	    std::vector<int64_t> chunk_data_pos(chunk_ids.size(), 0);
+
+	    /* get chunk data from all nodes */
+	    /* TODO: multi thread implementation */
+	    for (size_t i = 0; i < chunk_ids.size(); i++) {
+		node_id = get_node_id_by_chunk_id(arrinfo, chunk_ids[i]);
+		get_node_handler(node_id)->get_client()->
+		    load_chunk(chunk_data[i], arrinfo.name, chunk_ids[i], first, last);
+	    }
+
+	    /* assemble chunks */
+	    int64_t nelmts, copy_len, copy_num, buf_pos, i, j;
+	    std::vector<int64_t> chunk_2d_coords(2, 0);
+	    std::vector<int64_t> chunk_3d_coords(3, 0);
+
+	    nelmts = 1;
+	    for (i = 0; i < arrinfo.ndims; i++) 
+		nelmts *= (last[i] - first[i] + 1);
+
+	    buf = (char *)malloc(arrinfo.dtype_size * nelmts);
+	    assert(buf != NULL);
+	    buf_pos = 0;
+
+	    /* 2D array */
+	    if (2 == arrinfo.ndims) {
+		for (i = first[0]; i <= last[0]; i++)
+		    for (j = first[1]; j <= last[1]; j += copy_num) {
+			chunk_2d_coords[0] = i / arrinfo.dims[0].chunk_length;
+			chunk_2d_coords[1] = j / arrinfo.dims[1].chunk_length;
+			chunk_id = count_chunk_id_by_chunk_coords(arrinfo, chunk_2d_coords);
+			chunk_index = get_index_by_chunk_id(chunk_ids, chunk_id);
+			if (last[1] > arrinfo.chunks[chunk_id].last[1])
+			    copy_num = arrinfo.chunks[chunk_id].last[1] - j + 1;
+			else
+			    copy_num = last[1] - j + 1;
+			copy_len = copy_num * arrinfo.dtype_size;
+
+			memcpy(&(buf[buf_pos]), &(chunk_data[chunk_index][chunk_data_pos[chunk_index]]), copy_len);
+			buf_pos += copy_len;
+			chunk_data_pos[chunk_index] += copy_len;
+		    }
+	    }
+	    /* TODO:3D array */
+	    else if (3 == arrinfo.ndims) {
+	    }
+
+	    bin_to_string(data, buf, arrinfo.var_type, nelmts);
+	    free(buf);
+	}
+
+	/* parse subarray */
+	ArrayDBError parse_subarray(const string& query, string& name, std::vector<int64_t>& first, std::vector<int64_t>& last) {
+	    string str;
+	    std::vector<string> strs;
+	    int i, pos;
+	    int64_t value;
+	    ArrayInfo *arrinfo_p;
+
+	    pos = query.find_first_of("(");
+	    str = query.substr(pos, query.size() - pos);
+	    trim_if(str, is_any_of("() \t"));
+	    boost::split(strs, str, is_any_of(","), token_compress_on);
+
+	    name = trim_copy_if(strs[0], is_any_of(" \t"));
+
+	    arrinfo_p = find_arrinfo(name);
+	    if (arrinfo_p == NULL) 
+		return ARRAY_NOT_EXIST;
+
+	    if ((arrinfo_p->ndims * 2 + 1) != (int64_t)strs.size())
+		return SUBARRAY_PARAMS_ERROR;
+
+	    for (i = 1; i <= arrinfo_p->ndims; i++) {
+		value = lexical_cast<int64_t>(trim_copy_if(strs[i], is_any_of(" \t")));
+		first.push_back(value);
+		value = lexical_cast<int64_t>(trim_copy_if(strs[i + arrinfo_p->ndims], is_any_of(" \t")));
+		last.push_back(value);
+	    }
+
+	    return SUCCESS;
+	}
+
+
+	int get_node_id_by_chunk_id(const ArrayInfo& arrinfo, int chunk_id) {
+	    return arrinfo.chunks[chunk_id].node_id;
+	}
+
+	void echo(std::string& _return, const std::string& request) {
+	    // Your implementation goes here
+	    /* master part */
+	    if (get_local_role() == MASTER) {
+		size_t i;
+		string res;
+		_return = "";
+		for (i = 0; i < clients.size(); i++) {
+		    clients[i].get_client()->echo(res, request);
+		    _return = _return + clients[i].get_address() + "-> " + res + "\n";
+		}
+		cout<<_return<<endl;
+	    }
+
+	    /* worker part */
+	    else {
+		_return = "Hello, " + request;
+		std::cout<<_return<<endl;
+	    }
+	}
+
+	void store(std::string& _return, const Array& array) {
+	    // Your implementation goes here
+	    if (get_local_role() == MASTER) {
+		size_t i;
+		string res;
+		/* TODO: multi thread */
+		for (i = 0; i < clients.size(); i++) {
+		    clients[i].get_client()->store(res, array);
+		    _return = _return + clients[i].get_address() + "-> " + res + "\n";
+		}
+		cout<<_return<<endl;
+	    }
+
+	    else {
+		FILE *fh;
+		string path;
+
+		path = array.name + ".dat";
+
+		fh = fopen(path.data(), "wb");
+		assert(fh != NULL);
+		fwrite(array.data.data(), 1, array.data.length(), fh);
+		fclose(fh);
+
+		_return = "data loaded";
+	    }
+	}
+
+	void create_arrinfo(const ArrayInfo& arrinfo) {
+	    // Your implementation goes here
+	    write_arrinfo(arrinfo);
+
+	    printf("create_arrinfo\n");
+	}
+
+	void load(Array& _return, const std::string& array_name) {
+	    // Your implementation goes here
+	    printf("load\n");
+	}
+
+	/* TODO: load_chunk */
+	void load_chunk(std::string& _return, const std::string& name, const int32_t id, const std::vector<int64_t> & first, const std::vector<int64_t> & last) {
+	    // Your implementation goes here
+	    FILE *fh;
+	    size_t bufsize, bytes_read;
+	    int64_t i, j, is_all;
+	    string fname;
+	    char *buf;
+	    ArrayInfo *arrinfo_p;
+	    std::vector<int64_t> chunk_local_first(first.size(), 0);
+	    std::vector<int64_t> chunk_local_last(first.size(), 0);
+
+	    /* read data from file */
+	    fname = name + "_" + lexical_cast<string>(id) + ".dat";
+	    fh = fopen(fname.data(), "rb");
+	    assert(fh != NULL);
+	    bufsize = get_file_size(fh);
+
+	    buf = (char *)malloc(bufsize + 1);
+	    assert(buf != NULL);
+	    bytes_read = fread(buf, 1, bufsize, fh);
+	    assert(bytes_read == bufsize);
+	    fclose(fh);
+
+	    /* count chunk local coordinators */
+	    arrinfo_p = find_arrinfo(name);
+	    //printf("name %s\n", name.data());
+	    assert(arrinfo_p != NULL);
+	    is_all = 1;
+	    for (j = 0; j < arrinfo_p->ndims; j++) {
+		if (arrinfo_p->chunks[id].first[j] < first[j]) {
+		    chunk_local_first[j] = first[j] - arrinfo_p->chunks[id].first[j];
+		    is_all = 0;
+		}
+		else
+		    chunk_local_first[j] = 0;
+		if (arrinfo_p->chunks[id].last[j] > last[j]) {
+		    chunk_local_last[j] = last[j] - arrinfo_p->chunks[id].first[j];
+		    is_all = 0;
+		}
+		else
+		    chunk_local_last[j] = arrinfo_p->chunks[id].last[j] - arrinfo_p->chunks[id].first[j];
+	    }
+
+	    if (0 == is_all) {
+		int64_t nelmts, copy_num, copy_len, chunk_stride;
+		char *tbuf;
+		size_t tbuf_pos, buf_pos;
+		nelmts = 1;
+		for (i = 0; i < arrinfo_p->ndims; i++)
+		    nelmts *= (chunk_local_last[i] - chunk_local_first[i] + 1);
+
+		bufsize = nelmts * arrinfo_p->dtype_size;
+		tbuf = (char *)malloc(bufsize);
+		assert(tbuf != NULL);
+		tbuf_pos = 0;
+
+		/*  2d array */
+		if (2 == arrinfo_p->ndims) {
+		    chunk_stride = arrinfo_p->chunks[id].last[1] - arrinfo_p->chunks[id].first[1] + 1;
+		    copy_num = chunk_local_last[1] - chunk_local_first[1] + 1;
+		    buf_pos = (chunk_local_first[0] * chunk_stride + chunk_local_first[1]) * arrinfo_p->dtype_size;
+		    for (i = chunk_local_first[0]; i <= chunk_local_last[0]; i++) {
+			copy_len = copy_num * arrinfo_p->dtype_size;
+			memcpy(&(tbuf[tbuf_pos]), &(buf[buf_pos]), copy_len);
+			buf_pos += (chunk_stride * arrinfo_p->dtype_size);
+			tbuf_pos += copy_len;
+		    }
+		}
+
+		/* TODO: 3d array */
+		else if (3 == arrinfo_p->ndims) {
+
+		}
+		free(buf);
+		buf = tbuf;
+		tbuf = NULL;
+	    }
+
+	    _return.assign(buf, bufsize);
+	    free(buf);
+	    printf("load_chunk\n");
+	}
+
+	void map_chunk(ArrayInfo& arrinfo, StorageStrategy::type ss) {
+	    switch(ss) {
+		case StorageStrategy::ROUND_ROBIN:
+		    map_chunk_round_robin(arrinfo);
+		    break;
+		default:
+		    printf("strategy %d: not implementation yet\n", ss);
+		    break;
+	    }
+	}
+
+	/* use round robin to map array chunks into nodes */
+	void map_chunk_round_robin(ArrayInfo& arrinfo) {
+	    int64_t i;
+	    int j;
+	    size_t chunk_dim;
+
+	    arrinfo.ss = StorageStrategy::ROUND_ROBIN;
+
+	    /* chunk number */
+	    arrinfo.nchunks = 1;
+	    for (i = 0; i < arrinfo.ndims; i++) {
+		if ((arrinfo.dims[i].length % arrinfo.dims[i].chunk_length) != 0)
+		    chunk_dim = arrinfo.dims[i].length / arrinfo.dims[i].chunk_length + 1;
+		else     
+		    chunk_dim = arrinfo.dims[i].length / arrinfo.dims[i].chunk_length;
+		arrinfo.nchunks *= chunk_dim;
+		arrinfo.chunk_dims.push_back(chunk_dim);
+	    }
+
+	    /* chunk info */
+	    std::vector<int64_t> first(arrinfo.ndims, 0);
+	    std::vector<int64_t> last(arrinfo.ndims, 0);
+	    for (i = 0; i < arrinfo.ndims; i ++) {
+		last[i] = arrinfo.dims[i].chunk_length - 1;
+	    }
+
+	    for (i = 0; i < arrinfo.nchunks; i++) {
+		ChunkInfo chunk_info;
+		chunk_info.chunk_id = i;
+		chunk_info.node_id = clients[i % clients.size()].get_nodeid();  
+		chunk_info.ndims = arrinfo.ndims;
+		chunk_info.first = first;
+		chunk_info.last = last;
+
+		chunk_info.chunk_size = arrinfo.dtype_size;
+		for (j = 0; j < chunk_info.ndims; j++) {
+		    chunk_info.chunk_size *= (last[j] - first[j] + 1);
+		}
+
+		for (j = chunk_info.ndims - 1; j >= 0; j--) {
+		    first[j] += arrinfo.dims[j].chunk_length;
+		    last[j] += arrinfo.dims[j].chunk_length;
+		    if (last[j] >= arrinfo.dims[j].length)
+			last[j] = arrinfo.dims[j].length - 1;
+		    if (first[j] >= arrinfo.dims[j].length) {
+			first[j] = 0;
+			last[j] = arrinfo.dims[j].chunk_length - 1;
+		    }
+		    else
+			break;
+		}
+		arrinfo.chunks.push_back(chunk_info);
+	    }
+	}
+
+	ArrayDBError distribute_array(string& _return, const string& name, const string& data) {
+	    ArrayInfo *arrinfo_p;
+	    char **chunk_buf;
+	    int64_t i, nelmts;
+	    size_t copy_len;
+	    size_t *chunk_buf_pos;
+
+	    arrinfo_p = find_arrinfo(name);
+	    if (arrinfo_p == NULL)
+		return ARRAY_NOT_EXIST;
+
+	    /* allocate storage space for chunks */
+	    chunk_buf_pos = new size_t[arrinfo_p->nchunks];
+	    chunk_buf = new char *[arrinfo_p->nchunks];
+	    for (i = 0; i < arrinfo_p->nchunks; i++) {
+		chunk_buf[i] = new char[arrinfo_p->chunks[i].chunk_size];
+		chunk_buf_pos[i] = 0;
+	    }
+
+	    nelmts = arrinfo_p->nelmts;
+	    /* TODO: can be write in multiple thread */
+	    /* copy data into chunks */
+	    size_t chunk_id;
+	    size_t copy_num;
+	    for (i = 0; i < nelmts; i += copy_num) {
+		chunk_id = count_chunk_id_by_elmt_index(arrinfo_p, i);
+		/* count copy_len */
+		if ((i % arrinfo_p->dims[arrinfo_p->ndims - 1].length) == ((arrinfo_p->chunk_dims[arrinfo_p->ndims - 1] - 1) * arrinfo_p->dims[arrinfo_p->ndims - 1].chunk_length)) 
+		    copy_num = arrinfo_p->dims[arrinfo_p->ndims - 1].length - (arrinfo_p->chunk_dims[arrinfo_p->ndims - 1] - 1) * arrinfo_p->dims[arrinfo_p->ndims - 1].chunk_length;
+		else
+		    copy_num = arrinfo_p->dims[arrinfo_p->ndims - 1].chunk_length;
+		copy_len = copy_num * arrinfo_p->dtype_size;
+		cout<<"i:        "<<i<<endl;
+		cout<<"copy_num: "<<copy_num<<endl;
+		cout<<"copy_len: "<<copy_len<<endl;
+		cout<<"chunk_id: "<<chunk_id<<endl;
+		memcpy(&(chunk_buf[chunk_id][chunk_buf_pos[chunk_id]]), &((data.data())[i * arrinfo_p->dtype_size]), copy_len);
+		chunk_buf_pos[chunk_id] += copy_len;
+	    }
+
+	    /* distribute chunks into according nodes */
+	    /* TODO: string copy */
+	    string reply;
+	    Array arr;
+	    _return = "";
+	    for (i = 0; i < arrinfo_p->nchunks; i++) {
+		arr.name = arrinfo_p->name + "_" + lexical_cast<std::string>(i);
+		arr.data.assign(chunk_buf[i], chunk_buf_pos[i]);
+		get_node_handler(arrinfo_p->chunks[i].node_id)->get_client()->store(reply, arr);	
+		_return += get_node_handler(arrinfo_p->chunks[i].node_id)->get_address() + "->" + reply + "\n";
+	    }
+
+	    /* free */
+	    for (i = 0; i < arrinfo_p->nchunks; i++) {
+		delete []chunk_buf[i];
+	    }
+	    delete []chunk_buf;
+	    delete []chunk_buf_pos;
+	    return SUCCESS;
+	}
+
+	/* get node handler according to node id */
+	ServerConnection *get_node_handler(int node_id) {
+	    return &(clients[node_id - 1]);
+	}
+
+	size_t count_chunk_id_by_elmt_index(const ArrayInfo *arrinfo_p, size_t elmt_index) {
+	    std::vector<int64_t> chunk_coords(arrinfo_p->ndims, 0);
+	    int64_t i, j;
+	    int64_t pos, chunk_id, coord;
+
+	    /* count chunk_coords */
+	    pos = elmt_index;
+	    chunk_id = 0;
+	    for (i = 0, j = arrinfo_p->ndims - 1; i < arrinfo_p->ndims; i++, j--) {
+		coord = pos % arrinfo_p->dims[j].length;
+		pos = pos / arrinfo_p->dims[j].length;
+		chunk_coords[j] = coord / arrinfo_p->dims[j].chunk_length;
+	    }
+
+	    /* count chunk_id */
+	    /*chunk_id = chunk_coords[0];
+	      for (i = 1; i < arrinfo_p->ndims; i++) {
+	      chunk_id = chunk_id * arrinfo_p->chunk_dims[i] + chunk_coords[i];
+	      }*/
+	    chunk_id = count_chunk_id_by_chunk_coords(*arrinfo_p, chunk_coords);
+
+	    return chunk_id;
+	}
+
+	ArrayInfo* find_arrinfo(const string& arrname) {
+	    size_t i;
+
+	    /* search from memory */
+	    for (i = 0; i < array_infos.size(); i++) {
+		if (arrname == array_infos[i].name)
+		    return &(array_infos[i]);
+	    }
+
+	    /* search from disk */
+	    FILE *fh;
+	    string fname, arr_meta;
+	    size_t fsize;
+	    char *buf;
+	    ArrayInfo *arrinfo_p;
+	    ArrayInfo arrinfo;
+
+	    arrinfo_p = NULL;
+	    fname = arrname + ".meta";
+	    fh = fopen(fname.data(), "rb");
+	    if (fh != NULL) {
+		fsize = get_file_size(fh);
+		buf = new char[fsize + 1];
+		fread(buf, 1, fsize, fh);
+		fclose(fh);
+
+		arr_meta.assign(buf, fsize);
+		deserialize(arrinfo, arr_meta);
+
+		array_infos.push_back(arrinfo);
+		arrinfo_p = &(array_infos[array_infos.size() - 1]);
+
+		delete buf;
+		buf = NULL;
+	    }
+
+	    return arrinfo_p;
+	}
+
+	void write_arrinfo(const ArrayInfo& arrinfo) {
+	    string arr_str;
+	    string fname;
+	    FILE *fh;
+	    serialize<ArrayInfo>(arr_str, arrinfo);
+	    fname = arrinfo.name + ".meta";
+	    fh = fopen(fname.data(), "wb");
+	    assert(fh != NULL);
+	    fwrite(arr_str.data(), 1, arr_str.size(), fh);
+	    fclose(fh);
+	}
+
+	ArrayDBError check_overflow(const string& name, std::vector<int64_t>& first, std::vector<int64_t>& last) {
+	    ArrayInfo *arrinfo_p;
+	    int i;
+
+	    arrinfo_p = find_arrinfo(name);
+	    if (arrinfo_p == NULL)
+		return ARRAY_NOT_EXIST;
+
+	    for (i = 0; i < arrinfo_p->ndims; i++) {
+		if (first[i] < 0 || last[i] >= arrinfo_p->dims[i].length)
+		    return COORDS_OVERFLOW;
+	    }
+
+	    return SUCCESS;
+	}
+
+	void print_array_info(const ArrayInfo& arrinfo) {
+	    int64_t i, j;
+
+	    /* debug print */
+	    cout<<"array id: "<<arrinfo.array_id<<"\nchunk num: "<<arrinfo.nchunks
+		<<"\nstorage strategy: "<<arrinfo.ss<<"\n dtype_size: "<<arrinfo.dtype_size
+		<<"\nnelmts: "<<arrinfo.nelmts
+		<<"\narray_name: "<<arrinfo.name<<"\nvar_name: "<<arrinfo.var_name
+		<<"\nvar_type: "<<arrinfo.var_type<<"\nndims: "<<arrinfo.ndims;
+	    /* dim info */
+	    for (i = 0; i < arrinfo.ndims; i++) {
+		cout<<"\n\t dim name: "<<arrinfo.dims[i].name
+		    <<"\n\t dim len: "<<arrinfo.dims[i].length
+		    <<"\n\t dim chunk len: "<<arrinfo.dims[i].chunk_length
+		    <<"\n\t dim overlap len: "<<arrinfo.dims[i].overlap_length
+		    <<"\n\t ----------------------------------";
+	    }
+	    /* chunk dims */
+	    cout<<"\n\nchunk dims: \n";
+	    for (i = 0; i < arrinfo.ndims; i++) {
+		cout<<"\t"<<arrinfo.chunk_dims[i];
+	    }
+	    /* chunk info */
+	    for (i = 0; i < arrinfo.nchunks; i++) {
+		cout<<"\n\t chunk id: "<<arrinfo.chunks[i].chunk_id
+		    <<"\n\t node id: "<<arrinfo.chunks[i].node_id
+		    <<"\n\t chunk size: "<<arrinfo.chunks[i].chunk_size;
+		cout<<"\n\t first: ("; 
+		for (j = 0; j < arrinfo.ndims; j++) {
+		    cout<<","<<arrinfo.chunks[i].first[j];
+		}
+		cout<<")\n\t last:   ("; 
+		for (j = 0; j < arrinfo.ndims; j++) {
+		    cout<<","<<arrinfo.chunks[i].last[j];
+		}
+		cout<<")\n\t ---------------------------------"<<endl;
+	    }
+
+	}
+};
+
+} //end of namspace arraydb
+#endif

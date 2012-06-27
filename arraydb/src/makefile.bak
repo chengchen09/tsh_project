@@ -1,0 +1,25 @@
+BOOST_DIR = /usr
+THRIFT_DIR = /home/chen/local/include/thrift
+LDFLAGS = -L/home/chen/local/lib -Wl,-rpath=/home/chen/local/lib
+CFLAGS = -g -Wall
+PROG = arraydb_server arraydb_client
+LIBS = -lthrift -lthriftnb -levent
+CPPFLAGS = -I${THRIFT_DIR} -I${BOOST_DIR} -I/home/chen/local/include
+
+GEN_SRC = ArrayDB.cpp arraydb_types.cpp 
+
+all: ${PROG}
+
+arraydb_server: arraydb_server.cpp ${GEN_SRC}
+	g++ $(CFLAGS) -o arraydb_server ${CPPFLAGS} ${LDFLAGS} ${LIBS} arraydb_server.cpp ${GEN_SRC}
+
+arraydb_client: arraydb_client.cpp ${GEN_SRC}
+	g++ $(CFLAGS) -o arraydb_client ${CPPFLAGS} ${LDFLAGS} ${LIBS} arraydb_client.cpp ${GEN_SRC}
+
+copy: 
+	cp launch_arraydb.py arraydb_server ../master
+	cp launch_arraydb.py arraydb_server ../worker-1
+	cp launch_arraydb.py arraydb_server ../worker-2
+
+clean:
+	$(RM) ${PROG}

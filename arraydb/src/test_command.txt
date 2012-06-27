@@ -1,0 +1,40 @@
+create array sub <a:float> [x = 0:4,2, 0, y=0: 4, 2, 0]
+store test /home/chen/test.dat
+subarray(test, 0, 0, 7, 2)
+r -l localhost:9090 -m localhost:9090 -w localhost:9091 -w localhost:9092
+
+create array chen <a:float> [x = 0:8,2, 0, y=0: 3, 2, 0]
+store chen /home/chen/test.dat
+subarray(chen, 0, 0, 7, 2)
+
+/* test this array */
+create array new<a:float> [x=0:10, 4, 0, y = 0: 11, 4, 0]
+store chen /home/chen/new.dat
+subarray(new, 0, 0, 9, 10)
+
+/* test this array */
+create array sub<a:float> [x=0:10, 4, 0, y = 0: 11, 4, 0]
+store  /home/chen/new.dat
+subarray(new, 0, 0, 9, 10)
+
+create array sa <a:int32> [x = 0:4,2, 0, y=0: 4, 2, 0]
+store /tmp/test.bin
+subarray(sa, 1, 1, 2, 2)
+
+/* etop test */
+create array etop <a:float> [x = 0:10801, 1000, 0, y=0:21601, 1000, 0]
+store etop /home/chen/workspace/compress/data/etopo1_bed_g_f4.flt
+subarray(etop, 0, 0, 10, 10)
+
+/* supernode */
+store etop /home/bus/chen/etopo1_bed_g_f4.flt
+create index index_name chunk_index on etop
+
+/* filter */
+filter(etop, elevation > 1000)
+create index [index name] [index type] on [array name]
+select elevation from etop where elevation > 1000 and elevation < 2000
+
+/* set */
+set time on
+set intextype intex_type

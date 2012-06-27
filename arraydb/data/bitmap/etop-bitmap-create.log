@@ -1,0 +1,33 @@
+/home/bus/chen/local/bin/ibis -b "<binning nbins=2000/><encoding interval-equality/>" -d .
+0
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 33.3699 CPU seconds, 46.472 elapsed seconds
+
+1
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 35.3016 CPU seconds, 51.585 elapsed seconds
+
+2
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 33.5499 CPU seconds, 49.5651 elapsed seconds
+
+3
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 32.964 CPU seconds, 44.8511 elapsed seconds
+
+4
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 33.3189 CPU seconds, 45.4922 elapsed seconds
+
+5
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 33.3109 CPU seconds, 45.5118 elapsed seconds
+
+6
+/home/bus/chen/local/bin/ibis: building indexes for 1 data partition took 34.8247 CPU seconds, 52.3814 elapsed seconds
+
+after sorted:
+44.8511
+45.4922
+45.5118
+46.472
+49.5651
+51.585
+52.3814
+avg: 47.1829666667
+
+

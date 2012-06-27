@@ -1,0 +1,385 @@
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=51040"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.600909 CPU seconds, 12.9574 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.491925 CPU seconds, 12.8424 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.474927 CPU seconds, 13.1587 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.496924 CPU seconds, 12.859 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.468928 CPU seconds, 13.0088 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.501923 CPU seconds, 12.8859 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.469929 CPU seconds, 12.8673 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.448931 CPU seconds, 12.8256 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.450931 CPU seconds, 13.0171 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=51040) produced 388 hits, took 0.53092 CPU seconds, 12.8424 elapsed seconds
+after sorted:
+12.8256
+12.8424
+12.8424
+12.859
+12.8673
+12.8859
+12.9574
+13.0088
+13.0171
+13.1587
+avg: 12.8924
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=51443"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.509923 CPU seconds, 12.8756 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.496924 CPU seconds, 12.959 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.447933 CPU seconds, 12.8923 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.479928 CPU seconds, 12.884 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.566914 CPU seconds, 12.959 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.450932 CPU seconds, 12.8923 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.532919 CPU seconds, 12.8423 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.436934 CPU seconds, 13.0422 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.497924 CPU seconds, 12.8591 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=51443) produced 3877 hits, took 0.567913 CPU seconds, 12.8759 elapsed seconds
+after sorted:
+12.8423
+12.8591
+12.8756
+12.8759
+12.884
+12.8923
+12.8923
+12.959
+12.959
+13.0422
+avg: 12.886125
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=52191"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.463929 CPU seconds, 12.9591 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.504922 CPU seconds, 12.851 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.528921 CPU seconds, 12.9257 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.52392 CPU seconds, 12.984 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.569914 CPU seconds, 12.8593 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.488926 CPU seconds, 12.8342 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.495925 CPU seconds, 13.159 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.485926 CPU seconds, 12.8841 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.477928 CPU seconds, 12.8776 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=52191) produced 38690 hits, took 0.590909 CPU seconds, 13.0444 elapsed seconds
+after sorted:
+12.8342
+12.851
+12.8593
+12.8776
+12.8841
+12.9257
+12.9591
+12.984
+13.0444
+13.159
+avg: 12.911625
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=54095"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.535919 CPU seconds, 12.8166 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.523921 CPU seconds, 12.8915 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.52792 CPU seconds, 12.9415 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.594909 CPU seconds, 12.8916 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.520921 CPU seconds, 12.9498 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.590911 CPU seconds, 13.1247 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.52492 CPU seconds, 12.8999 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.530918 CPU seconds, 12.9332 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.602908 CPU seconds, 12.9332 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=54095) produced 387354 hits, took 0.59091 CPU seconds, 12.9748 elapsed seconds
+after sorted:
+12.8166
+12.8915
+12.8916
+12.8999
+12.9332
+12.9332
+12.9415
+12.9498
+12.9748
+13.1247
+avg: 12.92695
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=58800"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.07584 CPU seconds, 13.4646 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.07584 CPU seconds, 13.4709 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.00385 CPU seconds, 13.4063 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.14883 CPU seconds, 13.6067 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.11083 CPU seconds, 13.6145 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.02784 CPU seconds, 13.4059 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.05984 CPU seconds, 13.6297 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.03584 CPU seconds, 13.4229 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.12483 CPU seconds, 13.5146 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=58800) produced 3875008 hits, took 1.07684 CPU seconds, 13.5395 elapsed seconds
+after sorted:
+13.4059
+13.4063
+13.4229
+13.4646
+13.4709
+13.5146
+13.5395
+13.6067
+13.6145
+13.6297
+avg: 13.4974
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=67200"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.9807 CPU seconds, 16.7207 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.74673 CPU seconds, 16.6774 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.92171 CPU seconds, 16.7345 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.74673 CPU seconds, 16.6794 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.84472 CPU seconds, 16.7337 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.76673 CPU seconds, 16.819 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.65075 CPU seconds, 16.7126 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.68074 CPU seconds, 16.6803 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.59176 CPU seconds, 16.7477 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=67200) produced 38736687 hits, took 1.9687 CPU seconds, 16.6555 elapsed seconds
+after sorted:
+16.6555
+16.6774
+16.6794
+16.6803
+16.7126
+16.7207
+16.7337
+16.7345
+16.7477
+16.819
+avg: 16.711825
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=84390"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.21451 CPU seconds, 23.655 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.2665 CPU seconds, 23.6421 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 4.45632 CPU seconds, 23.6345 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.36249 CPU seconds, 23.5014 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.15652 CPU seconds, 24.018 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 2.94055 CPU seconds, 23.7836 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 4.11238 CPU seconds, 23.5969 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.57046 CPU seconds, 23.5889 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.24851 CPU seconds, 23.5267 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=84390) produced 116093981 hits, took 3.39048 CPU seconds, 23.6965 elapsed seconds
+after sorted:
+23.5014
+23.5267
+23.5889
+23.5969
+23.6345
+23.6421
+23.655
+23.6965
+23.7836
+24.018
+avg: 23.632125
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=93888"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.31419 CPU seconds, 30.6185 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.74413 CPU seconds, 30.769 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.99909 CPU seconds, 30.7776 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.86311 CPU seconds, 30.7132 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 6.28904 CPU seconds, 30.7314 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.76912 CPU seconds, 30.7174 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 6.11807 CPU seconds, 30.754 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.46917 CPU seconds, 30.7552 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.86911 CPU seconds, 30.9676 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=93888) produced 193494402 hits, took 5.2972 CPU seconds, 30.6476 elapsed seconds
+after sorted:
+30.6185
+30.6476
+30.7132
+30.7174
+30.7314
+30.754
+30.7552
+30.769
+30.7776
+30.9676
+avg: 30.7395
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=97597"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.9234 CPU seconds, 24.4262 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.35449 CPU seconds, 24.4717 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.82542 CPU seconds, 24.3719 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 4.66429 CPU seconds, 24.6715 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.68944 CPU seconds, 24.3846 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.68544 CPU seconds, 25.0429 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.22751 CPU seconds, 24.4548 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 4.64029 CPU seconds, 24.5059 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 4.05138 CPU seconds, 24.3572 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=97597) produced 270868466 hits, took 3.78942 CPU seconds, 24.3926 elapsed seconds
+after sorted:
+24.3572
+24.3719
+24.3846
+24.3926
+24.4262
+24.4548
+24.4717
+24.5059
+24.6715
+25.0429
+avg: 24.436325
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=100018"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.11868 CPU seconds, 17.2831 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.26166 CPU seconds, 16.9973 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 1.9577 CPU seconds, 17.1493 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.08868 CPU seconds, 17.1066 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.06468 CPU seconds, 17.148 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.6576 CPU seconds, 17.0331 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.05669 CPU seconds, 17.0164 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.35964 CPU seconds, 17.0676 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.14767 CPU seconds, 17.0505 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=100018) produced 348251574 hits, took 2.56661 CPU seconds, 17.0451 elapsed seconds
+after sorted:
+16.9973
+17.0164
+17.0331
+17.0451
+17.0505
+17.0676
+17.1066
+17.148
+17.1493
+17.2831
+avg: 17.06745
+
+
+/home/bus/chen/local/bin/ibis -d ./dpres -q "where pres<=104800"
+0
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.000999 CPU seconds, 0.123376 elapsed seconds
+1
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.003 CPU seconds, 0.0733781 elapsed seconds
+2
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.002 CPU seconds, 0.0672789 elapsed seconds
+3
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0 CPU seconds, 0.0734301 elapsed seconds
+4
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.002 CPU seconds, 0.066781 elapsed seconds
+5
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.001 CPU seconds, 0.073513 elapsed seconds
+6
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0 CPU seconds, 0.0733662 elapsed seconds
+7
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.002999 CPU seconds, 0.066956 elapsed seconds
+8
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0 CPU seconds, 0.081764 elapsed seconds
+9
+doQuery:: evaluate( FROM PRES WHERE pres<=104800) produced 386929137 hits, took 0.003 CPU seconds, 0.073462 elapsed seconds
+after sorted:
+0.066781
+0.066956
+0.0672789
+0.0733662
+0.0733781
+0.0734301
+0.073462
+0.073513
+0.081764
+0.123376
+avg: 0.0734091
+
+
