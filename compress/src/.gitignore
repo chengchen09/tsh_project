@@ -1,0 +1,7 @@
+*.o
+*.swp
+extract
+lzma_compress
+lzma_uncompress
+mpi_compress
+mpi_uncompress

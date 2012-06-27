@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g $/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = -I..\/lzmalib -I\/home\/bus\/chen\/local\/include$/;"	m
+DATA_OFFSET	lzma_compress.c	20;"	d	file:
+DATA_OFFSET	lzma_decompress.c	18;"	d	file:
+DATA_OFFSET	lzo_compress.c	20;"	d	file:
+DATA_OFFSET	lzo_decompress.c	18;"	d	file:
+DATA_OFFSET	mpi_compress.c	21;"	d	file:
+DATA_OFFSET	mpi_uncompress.c	20;"	d	file:
+DIM_LEN	nc32bin.c	17;"	d	file:
+DOUBLE	bincat.cpp	23;"	d	file:
+FLOAT	bincat.cpp	22;"	d	file:
+INT16	bincat.cpp	16;"	d	file:
+INT32	bincat.cpp	18;"	d	file:
+INT64	bincat.cpp	20;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -L..\/lzmalib -L\/home\/bus\/chen\/local\/lib$/;"	m
+LIBS	Makefile	/^LIBS = -llzma -llzo2$/;"	m
+MATRIXROTATION_H	matrixRotation.h	2;"	d
+MEMORY_CHECK	nc32bin.c	26;"	d	file:
+MIN	mpi_compress.c	19;"	d	file:
+MPICC	Makefile	/^MPICC = mpicc$/;"	m
+Matrix2D	matrixRotation.h	/^			Matrix2D(size_t *dlens, T *dt) $/;"	f	class:matrix::Matrix2D
+Matrix2D	matrixRotation.h	/^	class Matrix2D : public MatrixRotation$/;"	c	namespace:matrix
+MatrixRotation	matrixRotation.h	/^	class MatrixRotation$/;"	c	namespace:matrix
+NAME_LEN	extract.c	17;"	d	file:
+NAME_LEN	lzma_compress.c	19;"	d	file:
+NAME_LEN	lzo_compress.c	19;"	d	file:
+NAME_SIZE	mpi_compress.c	20;"	d	file:
+NAME_SIZE	mpi_uncompress.c	19;"	d	file:
+NC_ASSERT	nc32bin.c	19;"	d	file:
+OBJS	Makefile	/^OBJS =$/;"	m
+PROGS	Makefile	/^PROGS = lzma_compress extract lzma_decompress mpi_compress mpi_uncompress lzo_compress lzo_decompress bincat rotate_2d read_speed $/;"	m
+UINT16	bincat.cpp	17;"	d	file:
+UINT32	bincat.cpp	19;"	d	file:
+UINT64	bincat.cpp	21;"	d	file:
+UNKNOWN	bincat.cpp	15;"	d	file:
+bindir	Makefile	/^bindir = \/home\/bus\/chen\/local\/bin$/;"	m
+data	matrixRotation.h	/^			T *data;$/;"	m	class:matrix::Matrix2D
+dimlens	matrixRotation.h	/^			size_t *dimlens;$/;"	m	class:matrix::Matrix2D
+error_print	lzma_compress.c	/^void error_print(int err_code) {$/;"	f
+error_print	lzma_decompress.c	/^void error_print(int err_code) {$/;"	f
+error_print	mpi_compress.c	/^void error_print(int err_code) {$/;"	f
+error_print	mpi_uncompress.c	/^void error_print(int err_code) {$/;"	f
+get_fhname	mpi_uncompress.c	/^char *get_fhname(char *name) {$/;"	f
+get_fwname	mpi_compress.c	/^char *get_fwname(char *name) {$/;"	f
+get_fwname	mpi_uncompress.c	/^char *get_fwname(char *name) {$/;"	f
+get_rotated_data	matrixRotation.h	/^			const T *get_rotated_data() {$/;"	f	class:matrix::Matrix2D
+get_type_size	nc32bin.c	/^size_t get_type_size(int type) {$/;"	f
+main	bincat.cpp	/^int main(int argc, char **argv)$/;"	f
+main	extract.c	/^int main(int argc, char **argv) {$/;"	f
+main	lzma_compress.c	/^int main(int argc, char **argv) {$/;"	f
+main	lzma_decompress.c	/^int main(int argc, char **argv) {$/;"	f
+main	lzo_compress.c	/^int main(int argc, char **argv) {$/;"	f
+main	lzo_decompress.c	/^int main(int argc, char **argv) {$/;"	f
+main	mpi_compress.c	/^int main(int argc, char **argv) {$/;"	f
+main	mpi_uncompress.c	/^int main(int argc, char **argv) {$/;"	f
+main	nc32bin.c	/^int main(int argc, char **argv) {$/;"	f
+main	read_speed.c	/^int main(int argc, char **argv) {$/;"	f
+main	rotate_2d.cpp	/^int main(int argc, char **argv)$/;"	f
+matrix	matrixRotation.h	/^namespace matrix$/;"	n
+matrix_rotation	matrixRotation.h	/^			void matrix_rotation()$/;"	f	class:matrix::Matrix2D
+mpi_rank	mpi_compress.c	/^int mpi_rank;$/;"	v
+mpi_rank	mpi_uncompress.c	/^int mpi_rank;$/;"	v
+mpi_size	mpi_compress.c	/^int mpi_size;$/;"	v
+mpi_size	mpi_uncompress.c	/^int mpi_size;$/;"	v
+ndims	matrixRotation.h	/^			size_t ndims;$/;"	m	class:matrix::Matrix2D
+nitems	matrixRotation.h	/^			size_t nitems;$/;"	m	class:matrix::Matrix2D
+print_bin_data	bincat.cpp	/^void print_bin_data(void *buf, int dtype, size_t nitems)$/;"	f
+print_float_data	bincat.cpp	/^void print_float_data(float *data, size_t nitems)$/;"	f
+print_original_matrix	matrixRotation.h	/^			void print_original_matrix()$/;"	f	class:matrix::Matrix2D
+print_pos_data	bincat.cpp	/^void print_pos_data(void *buf, int dtype, size_t pos)$/;"	f
+print_rotated_matrix	matrixRotation.h	/^			void print_rotated_matrix()$/;"	f	class:matrix::Matrix2D
+rotated_data	matrixRotation.h	/^			T *rotated_data;$/;"	m	class:matrix::Matrix2D
+rotated_dimlens	matrixRotation.h	/^			size_t *rotated_dimlens;$/;"	m	class:matrix::Matrix2D
+usage	bincat.cpp	/^void usage()$/;"	f
+usage	rotate_2d.cpp	/^void usage()$/;"	f
+~Matrix2D	matrixRotation.h	/^			~Matrix2D()$/;"	f	class:matrix::Matrix2D
